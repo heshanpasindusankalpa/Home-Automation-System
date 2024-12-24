@@ -1,0 +1,39 @@
+.navBarBox
+{
+   height: 80px; 
+   width:100%;
+   background-color: rgb(37, 149, 112);
+   display:flex;
+   align-items: center;
+   position: sticky;
+   top: 0;
+}
+.navBarLeft
+{
+flex:3;
+}
+.navBarCenter
+{
+    flex:5;
+
+}
+.navBarRight
+{
+   flex:4; 
+}
+.logo
+{
+    font-size: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.searchBarBox
+{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
