@@ -1,0 +1,40 @@
+.leftPaneBox
+{
+    background-color:rgb(255, 170, 0);
+    flex:2;
+    width: 180px;
+}
+.leftPaneContainer
+{
+    padding:20px;
+}
+.leftPaneMenu
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.leftPaneMenuItem
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.OverallIcon
+{
+    margin-right: 20px;
+    font-size: 7em; /* Adjust font size for font-based icons */
+}
+
+.lightIcon
+{
+    margin-right: 20px;
+}
+.addIcon
+{
+    margin-right: 20px;
+}
+.addText
+{
+    cursor: pointer;
+}

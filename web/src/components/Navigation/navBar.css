@@ -20,6 +20,33 @@ flex:3;
 .navBarRight
 {
    flex:4; 
+   display: flex;
+   align-items: center;
+   
+}
+.navBarIcons
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.navBarIcon
+{
+    margin-left: 10px;
+}
+
+.navBarLinks
+{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navBarLink
+{
+    margin-left: 10px;
 }
 .logo
 {
@@ -36,4 +63,19 @@ flex:3;
     border-radius: 30px;
     display: flex;
     align-items: center;
+}
+.searchIcon
+{
+    margin-left: 10px;
+}
+
+.searchInput
+{
+    border: none;
+    width:80%;
+
+}
+.searchInput:focus
+{
+outline: none;
 }
