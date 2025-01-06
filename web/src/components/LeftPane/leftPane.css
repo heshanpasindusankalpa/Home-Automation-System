@@ -1,40 +1,74 @@
-.leftPaneBox
-{
-    background-color:rgb(255, 170, 0);
-    flex:2;
-    width: 180px;
+/* Updated styles for LeftPane */
+.leftPaneBox {
+    background-color: #2d3436; /* Dark gray background for modern look */
+    color: #ffffff; /* White text for better contrast */
+    flex: 2;
+    width: 200px;
+    height:flex; /* Full viewport height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.leftPaneContainer
-{
-    padding:20px;
+
+.leftPaneContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
-.leftPaneMenu
-{
+
+.leftPaneMenu {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.leftPaneMenuItem
-{
+
+.leftPaneMenuItem {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-.OverallIcon
-{
-    margin-right: 20px;
-    font-size: 7em; /* Adjust font size for font-based icons */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
 }
 
-.lightIcon
-{
-    margin-right: 20px;
+.leftPaneMenuItem:hover {
+    background-color: #636e72; /* Subtle hover effect */
+    transform: translateX(5px); /* Slight movement on hover */
 }
-.addIcon
-{
-    margin-right: 20px;
+
+.OverallIcon, .lightIcon, .addIcon {
+    margin-right: 15px;
+    font-size: 2em; /* Icon size */
+    color: #fdcb6e; /* Soft yellow for icons */
+    transition: color 0.3s ease;
 }
-.addText
-{
-    cursor: pointer;
+
+.leftPaneMenuItem:hover .OverallIcon, 
+.leftPaneMenuItem:hover .lightIcon, 
+.leftPaneMenuItem:hover .addIcon {
+    color: #74b9ff; /* Light blue on hover */
+}
+
+.addText, .overall, .lights {
+    font-size: 1.2em; /* Slightly larger text */
+    font-weight: 500; /* Semi-bold for readability */
+    color: #dfe6e9; /* Light gray text */
+    transition: color 0.3s ease;
+}
+
+.leftPaneMenuItem:hover .addText, 
+.leftPaneMenuItem:hover .overall, 
+.leftPaneMenuItem:hover .lights {
+    color: #ffffff; /* Bright white text on hover */
+}
+
+/* Add some spacing and style to make the left pane look structured */
+.leftPaneBox {
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+.leftPaneMenuItem:last-child {
+    margin-bottom: 0; /* Remove margin for the last menu item */
 }

@@ -2,8 +2,9 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #202222;
+    background-color: #f9ffff;
     animation: fadeIn 1s ease-in-out;
+  
 }
 
 /* Dashboard Styling */
@@ -20,11 +21,11 @@ body {
 /* Widgets Container */
 .widgets {
     display: flex;
-    justify-content: center;
+    justify-content:ce;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 1%;
 }
 
 /* Widget Styling */

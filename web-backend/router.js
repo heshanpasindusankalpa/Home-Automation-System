@@ -1,11 +1,25 @@
-const express=require('express');
-const router =express.Router();
+/*const express = require('express');
 const controller = require('./controller');
+const router = express.Router();
 
+router.get('/components', controller.getComponents);
+router.post('/addcomponent', controller.addComponent);
+router.put('/updatecomponent', controller.updateComponent);
+router.delete('/deletecomponent', controller.deleteComponent);
 
-router.get('/users',controller.getUsers);
-router.post('/createuser',controller.addUser);
-router.post('/updateuser',controller.updateUser);
-router.post('/deleteuser',controller.deleteUser);
+module.exports = router;*/
+const express = require('express');
+const componentController = require('./controller');
+const sensorRouter = require('./sensorRouter');
 
-module.exports=router;
+const router = express.Router();
+
+router.get('/components', componentController.getComponents);
+router.post('/addcomponent', componentController.addComponent);
+router.put('/updatecomponent', componentController.updateComponent);
+router.delete('/deletecomponent', componentController.deleteComponent);
+
+// Sensor data routes
+router.use(sensorRouter);
+
+module.exports = router;

@@ -1,10 +1,11 @@
-const mongoose =require('mongoose');
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-const userSchema = new Schema({
-    id:Number,
-    name: String,
+const componentSchema = new mongoose.Schema({
+  id: { type: Number, required: true },
+  name: { type: String, required: true },
+  type: { type: String, required: true }, // e.g., fan, light, etc.
+  status: { type: String, required: true, default: 'off' }, // e.g., on/off
 });
 
-const User = mongoose.model('User',userSchema);
-module.exports=User;
+module.exports = mongoose.model('Component', componentSchema);
+

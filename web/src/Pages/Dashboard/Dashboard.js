@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import './dashboard.css'; // Adjust CSS path
 import LeftPane from '../../components/LeftPane/LeftPane'; // Adjust path
-//import Graph from '../../components/Dashboard/Graph'; // Adjust path
+// import Graph from '../../components/Dashboard/Graph'; // Adjust path
 
 const socket = io('http://localhost:3000'); // Replace with your backend's URL
 
@@ -47,7 +47,7 @@ export default function Dashboard() {
         <LeftPane />
       </div>
       <div className="graph">
-        
+        {/* Graph Component Placeholder */}
       </div>
       <div className="widgets">
         <div className="widget">

@@ -1,81 +1,116 @@
-.navBarBox
-{
-   height: 80px; 
-   width:100%;
-   background-color: rgb(37, 149, 112);
-   display:flex;
-   align-items: center;
-   position: sticky;
-   top: 0;
-}
-.navBarLeft
-{
-flex:3;
-}
-.navBarCenter
-{
-    flex:5;
-
-}
-.navBarRight
-{
-   flex:4; 
-   display: flex;
-   align-items: center;
-   
-}
-.navBarIcons
-{
+.navBarBox {
+    height: 80px; 
+    width: 100%;
+    background-color: #0f100f; /* A deeper green to represent sustainability and automation */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    z-index: 10; /* Ensures navbar stays on top */
+ }
+ 
+ .navBarLeft {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* Adjust padding for better spacing */
+ }
+ 
+ .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFF; /* White for visibility */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+ }
+ 
+ .logo:hover {
+    color: #F2F2F2; /* Slight hover effect for interactivity */
+ }
+ 
+ .navBarCenter {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .navBarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+ }
+ 
+ .navBarLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+ }
+ 
+ .navBarLink {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+ }
+ 
+ .navBarLink:hover {
+    color: #A3E4D7; /* A complementary lighter green for hover */
+ }
+ 
+ .navBarIcons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 10px;
-}
-.navBarIcon
-{
-    margin-left: 10px;
-}
-
-.navBarLinks
-{
-    margin-left: 10px;
-    font-size: 20px;
+ }
+ 
+ .navBarIcon {
+    margin-left: 15px;
+    color: #FFF;
+    font-size: 24px;
     cursor: pointer;
-    font-weight: bold;
-}
-
-.navBarLink
-{
-    margin-left: 10px;
-}
-.logo
-{
-    font-size: 35px;
-    margin-left: 10px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.searchBarBox
-{
+    transition: color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .navBarIcon:hover {
+    color: #A3E4D7; /* Matches the link hover color */
+    transform: scale(1.1); /* Subtle zoom effect */
+ }
+ 
+ .searchBarBox {
     width: 300px;
     height: 40px;
-    background-color: white;
-    border-radius: 30px;
+    background-color: #E8F6F3; /* A light greenish-white background */
+    border-radius: 20px;
     display: flex;
     align-items: center;
-}
-.searchIcon
-{
-    margin-left: 10px;
-}
-
-.searchInput
-{
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+ }
+ 
+ .searchIcon {
+    color: #235E44;
+    font-size: 20px;
+    margin-right: 10px;
+ }
+ 
+ .searchInput {
     border: none;
-    width:80%;
-
-}
-.searchInput:focus
-{
-outline: none;
-}
+    flex-grow: 1; /* Allows input to fill remaining space */
+    font-size: 16px;
+    color: #235E44;
+    background-color: transparent;
+ }
+ 
+ .searchInput:focus {
+    outline: none;
+    border-bottom: 2px solid #A3E4D7; /* Subtle focus effect */
+ }
+ 

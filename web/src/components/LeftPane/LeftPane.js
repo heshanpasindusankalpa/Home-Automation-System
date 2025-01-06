@@ -7,7 +7,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function LeftPane() {
-  const Navigate=useNavigate();
+  const navigate=useNavigate();
   return (
     <div className='leftPaneBox'>
       <div className="leftPaneContainer">
@@ -24,17 +24,17 @@ export default function LeftPane() {
             </div>
             <div className="leftPaneMenuItem">
               < TapAndPlayIcon className='addIcon'/>
-              <span className='addText' onClick={()=> Navigate("/add")}>Add</span>
+              <span className='addText' onClick={()=> navigate("/add")}>Add</span>
               
             </div>
             <div className="leftPaneMenuItem">
               < NotificationsIcon className='OverallIcon'/>
-              <span className='overall'>Notifications</span>
+              <span className='overall'>Fans</span>
 
             </div>
             <div className="leftPaneMenuItem">
               < GridViewIcon className='OverallIcon'/>
-              <span className='overall'>Overall</span>
+              <span className='overall'>Other Divices</span>
 
             </div>
         </div>

@@ -1,40 +1,29 @@
 const express = require('express');
-const app=express();
 const cors = require('cors');
-const controller = require('./controller');
+const mongoose = require('mongoose');
+const router = require('./router');
 
+const app = express();
+const port = 3001;
+const host = 'localhost';
+
+// Middleware
 app.use(cors());
-app.use
-(
-    express.urlencoded({
-        extended:true,}
-    )
-);
 app.use(express.json());
-app.get('/users',(req,res)=>{
-    controller.getUsers((req,res,next)=>{
-        res.send();
-    });
+
+// MongoDB URI
+const uri = 'mongodb://your_username:your_password@cluster0.mongodb.net/dbname?retryWrites=true&w=majority';
+
+// MongoDB Connection
+mongoose
+  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error('MongoDB connection error:', err));
+
+// Routes
+app.use('/api', router);
+
+// Start Server
+app.listen(port, host, () => {
+  console.log(`Server is running at http://${host}:${port}`);
 });
-app.post('/createuser',(req,res)=>{
-    controller.addUser(req.body,(callack)=>{
-        res.send();
-    });
-        
-    });
-
-    app.post('/updateuser',(req,res)=>{
-        controller.updateUser(req.body,(callack)=>{
-            res.send(callack);
-        });
-            
-        });
-        app.post('/deleteuser',(req,res)=>{
-            controller.deleteUser(req.body,(callack)=>{
-                res.send(callack);
-            });
-                
-            });
-
-
-module.exports=app;
