@@ -1,14 +1,14 @@
-/* General Styling 
+General Styling 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f0f2f5;
+  background-color:ivory;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}*/
+}
 
 /* Login Container */
 .login-container {
@@ -21,20 +21,21 @@ body {
 
 /* Login Box */
 .login-box {
-  background: #4cbb52;
+  background: rgb(10, 96, 83);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;
-  max-width: 400px;
+  width: 30%;
+  height: 60%;;
   margin-top: 5%;
+  position: relative; /* Allows precise placement of the LoginIcon */
 }
 
 /* Heading */
 .login-box h2 {
-  font-size: 1.8rem;
-  color: #333;
+  font-size: 2rem;
+  color: #e5e2e2;
   margin-bottom: 1.5rem;
 }
 
@@ -96,4 +97,15 @@ button:hover {
 
 .signup-text a:hover {
   color: #0056b3;
+}
+.LoginIcon
+{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align vertically */
+  margin: 0 auto 0rem; /* Add spacing below the icon */
+  font-size: 16rem; /* Make the icon large */
+  color: #e5e2e2; /* Match the icon color to the theme */
+margin-top: 0;
+    
 }

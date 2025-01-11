@@ -113,4 +113,10 @@
     outline: none;
     border-bottom: 2px solid #A3E4D7; /* Subtle focus effect */
  }
+ .navBarLogo {
+   width: 40px; /* Adjust size as needed */
+   height: 40px;
+   margin-left: 0px; /* Add spacing between text and image */
+   border-radius: 0%; /* Optional: Makes the image circular */
+ }
  

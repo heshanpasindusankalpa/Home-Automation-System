@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export default function Login() {
   // Hard-coded admin credentials
@@ -27,7 +28,11 @@ export default function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2>Admin Login</h2>
+        <div className='icons'>
+        <div className='LoginIcon'><AccountCircleIcon/></div>
+
+        </div>
+        <h2>Login</h2>
         <form onSubmit={handleLogin}>
           <label htmlFor="username">Username:</label>
           <input
@@ -53,6 +58,7 @@ export default function Login() {
 
           <button type="submit">Login</button>
         </form>
+       
       </div>
     </div>
   );
