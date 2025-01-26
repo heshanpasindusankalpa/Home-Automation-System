@@ -2,37 +2,149 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f9ffff;
+    background-color: ivory; /* Dark background color */
     animation: fadeIn 1s ease-in-out;
-  
+    color: #ffffff; /* Light text color for contrast */
 }
 
 /* Dashboard Styling */
-/*.dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.dashboard {
+    display: grid;
+    gap: 10px;
     padding: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
-}*/
+    height: 100vh;
+    grid-template-areas: "leftPane mainContent rightPane";
+}
 
-/* Widgets Container */
-.widgets {
+/* Main Content */
+.mainContent {
+    grid-area: mainContent;
     display: flex;
-    justify-content:ce;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff; /* Light text color for contrast */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Right Pane */
+.rightPane {
+    grid-area: rightPane;
+    background-color: rgba(82, 83, 83, 0.1); /* Transparent background with a gradient tone */
+    border-radius: 10px;
+    padding: 15px;
+    color: #ffffff; /* Light text color for contrast */
+    width: 250px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Widget Section */
+.widgetSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background: rgba(236, 242, 239, 0.1); /* Light transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Weather Widget Styling */
+.weatherWidget {
+    background: linear-gradient(135deg, #0699b6, #89cddd); /* Dark gradient */
+    box-shadow: 0 4px 6px rgba(20, 120, 133, 0.4);
+    border-radius: 15px;
+    width: 300px;
+    height: 250px; /* Increased height for more content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 1%;
-    color: #4caf50;
+    color: #ffffff; /* Light text color for contrast */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weatherWidget:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.weatherHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.weatherHeader img {
+    width: 140px;  /* Adjust the width to your desired size */
+    height: 140px; /* Adjust the height to your desired size */
+    object-fit: contain; /* Ensure the icon scales properly */
+}
+
+.weatherDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.temperature, .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherWidget h3 {
+    font-size: 1.75rem;
+    margin-bottom: 5px;
+}
+
+.weatherWidget p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Forecast Section */
+.forecastSection {
+    margin-top: 20px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.forecastItem {
+    background: linear-gradient(135deg, #444444, #666666); /* Darker gradient for forecast */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #e0e0e0; /* Light text color for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecastItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.forecastItem p {
+    margin: 5px 0;
 }
 
 /* Widget Styling */
 .widget {
-    background: linear-gradient(135deg, #ff8c00, #ffcc00);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #333333, #555555); /* Dark gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     width: 200px;
     height: 150px;
@@ -40,14 +152,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #ffffff; /* Light text color for contrast */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .widget:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .widget h3 {
@@ -60,41 +172,6 @@ body {
     font-weight: bold;
 }
 
-/* Toggle Button Styles */
-.toggle {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 10px;
-    background-color: #f44336; /* Default OFF */
-    color: white;
-}
-
-.toggle.on {
-    background-color: #4caf50;
-}
-
-.toggle.off {
-    background-color: #f44336;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .dashboard {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .widget {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -104,5 +181,22 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .leftPaneContainer, .rightPane {
+        width: 100%;
+    }
+
+    .widget, .weatherWidget {
+        width: 100%;
+        max-width: 300px;
     }
 }

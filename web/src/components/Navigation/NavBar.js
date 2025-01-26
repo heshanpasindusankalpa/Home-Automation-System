@@ -7,6 +7,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import "./navBar.css";
 import Logo from '../../images/0107.png';
 
+
 export default function NavBar() {
   return (
     <div className='navBarBox'>

@@ -150,3 +150,14 @@ D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Hom
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Aut.A0D5CE25.Up2Date
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\AddWindow.g.cs
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\AddWindow.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\DnsClient.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MongoDB.Bson.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MongoDB.Driver.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\SharpCompress.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Snappier.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\ZstdSharp.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\slider3.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_Content.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\slider2.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LoginWndow.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LoginWndow.baml

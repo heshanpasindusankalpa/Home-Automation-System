@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import Axios from 'axios';
 import ComponentForm from './ComponentForm';
 import ComponentTable from './ComponentTable';
-import Axios from 'axios';
+import LeftPane from '../../../components/LeftPane/LeftPane';
+import './Components.css';
 
 const Components = () => {
   const [components, setComponents] = useState([]);
@@ -51,23 +53,32 @@ const Components = () => {
   };
 
   return (
-    <div>
-      <ComponentForm
-        addComponent={addComponent}
-        updateComponent={updateComponent}
-        data={selectedComponent}
-        isEdit={isEdit}
-      />
-      <ComponentTable
-        rows={components}
-        selectComponent={(data) => {
-          setSelectedComponent(data);
-          setIsEdit(true);
-        }}
-        deleteComponent={(id) =>
-          window.confirm('Are you sure?') && deleteComponent(id)
-        }
-      />
+    <div className="components-page">
+      <div className="leftPaneContainer4">
+        <LeftPane />
+      </div>
+      <div className="main-content4">
+        <div className="form-container">
+          <ComponentForm
+            addComponent={addComponent}
+            updateComponent={updateComponent}
+            data={selectedComponent}
+            isEdit={isEdit}
+          />
+        </div>
+        <div className="table-container">
+          <ComponentTable
+            rows={components}
+            selectComponent={(data) => {
+              setSelectedComponent(data);
+              setIsEdit(true);
+            }}
+            deleteComponent={(id) =>
+              window.confirm('Are you sure?') && deleteComponent(id)
+            }
+          />
+        </div>
+      </div>
     </div>
   );
 };

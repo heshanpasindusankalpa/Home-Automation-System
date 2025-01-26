@@ -1,121 +1,41 @@
 ﻿<Window x:Class="Home_Automation_Desktop.AddWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Home_Automation_Desktop"
-        mc:Ignorable="d"
-        Title="AddWindow"
-        Height="600" Width="850" AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen"
-        WindowStyle="None"
-        Background="Transparent">
-    <Window.Resources>
-        <!-- Button Style -->
-        <Style x:Key="CustomButtonStyle" TargetType="Button">
-            <Setter Property="FontFamily" Value="Segoe UI" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Background" Value="#3E454D" />
-            <Setter Property="BorderBrush" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Height" Value="45" />
-            <Setter Property="Margin" Value="10" />
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                CornerRadius="10" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center" />
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#556A7F" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#2D3944" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <!-- Title TextBlock Style -->
-        <Style x:Key="TitleTextStyle" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Segoe UI" />
-            <Setter Property="FontSize" Value="24" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Foreground" Value="White" />
-        </Style>
-    </Window.Resources>
+        Title="Add New Device" Height="400" Width="600" 
+        WindowStartupLocation="CenterScreen" Background="#212529" 
+        AllowsTransparency="True" WindowStyle="None">
     <Grid>
-        <!-- Background Border -->
         <Border Background="#212529" CornerRadius="20">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60"/>
-                    <!-- Title Bar -->
-                    <RowDefinition />
-                    <!-- Main Content -->
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <!-- Title Bar -->
                 <Border Background="#556A7F" CornerRadius="20,20,0,0" Grid.Row="0">
-                    <DockPanel LastChildFill="True" Margin="10,0">
-                        <!-- Close Button -->
-                        <Button Content="X" Width="30" Height="30" 
-                                Background="Transparent" Foreground="White" 
-                                FontWeight="Bold" 
-                                VerticalAlignment="Center" HorizontalAlignment="Right"
-                                BorderBrush="Transparent"
-                                Click="CloseButton_Click" />
-                        <!-- Title Text -->
-                        <TextBlock Text="Add New Item" 
-                                   Style="{StaticResource TitleTextStyle}" 
-                                   VerticalAlignment="Center" 
-                                   HorizontalAlignment="Center"
-                                   DockPanel.Dock="Left"/>
+                    <DockPanel LastChildFill="True">
+                        <TextBlock Text="Add New Device" FontSize="20" FontWeight="Bold" 
+                                   Foreground="White" VerticalAlignment="Center" Margin="10" />
+                        <Button Content="X" Width="30" Height="30" Background="Transparent" 
+                                Foreground="White" BorderBrush="Transparent" FontWeight="Bold" 
+                                Click="CloseButton_Click" DockPanel.Dock="Right" />
                     </DockPanel>
                 </Border>
 
-                <!-- Main Content -->
-                <Grid Grid.Row="1" Margin="20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="1" Margin="20" VerticalAlignment="Top">
+                    <TextBlock Text="Name" Foreground="White" Margin="5" />
+                    <TextBox x:Name="NameTextbox" Background="#3E454D" Foreground="White" Margin="5" />
 
-                    <!-- Form Fields -->
-                    <TextBlock Text="Id" Margin="5" Padding="5" FontSize="20" Foreground="White" Grid.Row="0" Grid.Column="0"/>
-                    <TextBox Margin="5" Padding="5" Background="#3E454D" Foreground="White" FontSize="20" Grid.Row="0" Grid.Column="1" x:Name="IdTextbox"/>
-                    <TextBlock Text="Name" Margin="5" Padding="5" FontSize="20" Foreground="White" Grid.Row="1" Grid.Column="0"/>
-                    <TextBox Margin="5" Padding="5" Background="#3E454D" Foreground="White" FontSize="20" Grid.Row="1" Grid.Column="1" x:Name="NameTextbox"/>
-                    <TextBlock Text="Type" Margin="5" Padding="5" FontSize="20" Foreground="White" Grid.Row="2" Grid.Column="0"/>
-                    <TextBox Margin="5" Padding="5" Background="#3E454D" Foreground="White" FontSize="20" Grid.Row="2" Grid.Column="1" x:Name="TypeTextbox"/>
-                    <TextBlock Text="Status" Margin="5" Padding="5" FontSize="20" Foreground="White" Grid.Row="3" Grid.Column="0"/>
-                    <TextBox Margin="5" Padding="5" Background="#3E454D" Foreground="White" FontSize="20" Grid.Row="3" Grid.Column="1" x:Name="StatusTextbox"/>
+                    <TextBlock Text="Type" Foreground="White" Margin="5" />
+                    <TextBox x:Name="TypeTextbox" Background="#3E454D" Foreground="White" Margin="5" />
 
-                    <!-- Buttons -->
-                    <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Right">
-                        <Button Content="Save" Style="{StaticResource CustomButtonStyle}" Click="SaveButton" />
-                        <Button Content="Cancel" Style="{StaticResource CustomButtonStyle}" Click="CloseButton_Click"/>
-                    </StackPanel>
-                </Grid>
+                    <TextBlock Text="Status (True/False)" Foreground="White" Margin="5" />
+                    <TextBox x:Name="StatusTextbox" Background="#3E454D" Foreground="White" Margin="5" />
+
+                    <Button Content="Save" Click="SaveButton_Click" Margin="5" />
+                </StackPanel>
             </Grid>
         </Border>
     </Grid>
 </Window>
+

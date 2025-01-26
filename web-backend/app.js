@@ -1,29 +1,76 @@
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
-const router = require('./router');
+import React, { useEffect, useState } from 'react';
+import Axios from 'axios';
+import ComponentForm from './ComponentForm';
+import ComponentTable from './ComponentTable';
 
-const app = express();
-const port = 3001;
-const host = 'localhost';
+const Components = () => {
+  const [components, setComponents] = useState([]);
+  const [isEdit, setIsEdit] = useState(false);
+  const [selectedComponent, setSelectedComponent] = useState({});
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+  useEffect(() => {
+    getComponents();
+  }, []);
 
-// MongoDB URI
-const uri = 'mongodb://your_username:your_password@cluster0.mongodb.net/dbname?retryWrites=true&w=majority';
+  const getComponents = () => {
+    Axios.get('http://localhost:3001/api/components')
+      .then((response) => {
+        setComponents(response?.data?.response || []);
+      })
+      .catch(() => {
+        alert('Failed to fetch components. Please try again later.');
+      });
+  };
 
-// MongoDB Connection
-mongoose
-  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((err) => console.error('MongoDB connection error:', err));
+  const addComponent = (data) => {
+    Axios.post('http://localhost:3001/api/addcomponent', data)
+      .then(() => {
+        getComponents();
+        setIsEdit(false);
+      })
+      .catch(() => {
+        alert('Failed to add component. Please try again.');
+      });
+  };
 
-// Routes
-app.use('/api', router);
+  const updateComponent = (data) => {
+    Axios.put('http://localhost:3001/api/updatecomponent', data)
+      .then(() => {
+        getComponents();
+        setIsEdit(false);
+      })
+      .catch(() => {
+        alert('Failed to update component. Please try again.');
+      });
+  };
 
-// Start Server
-app.listen(port, host, () => {
-  console.log(`Server is running at http://${host}:${port}`);
-});
+  const deleteComponent = (id) => {
+    Axios.delete('http://localhost:3001/api/deletecomponent', { data: { id } })
+      .then(() => getComponents())
+      .catch(() => alert('Failed to delete component. Please try again.'));
+  };
+
+  return (
+    <div>
+      <ComponentForm
+        addComponent={addComponent}
+        updateComponent={updateComponent}
+        data={selectedComponent}
+        isEdit={isEdit}
+      />
+      <ComponentTable
+        rows={components}
+        selectComponent={(data) => {
+          setSelectedComponent(data);
+          setIsEdit(true);
+        }}
+        deleteComponent={(id) =>
+          window.confirm('Are you sure?') && deleteComponent(id)
+        }
+      />
+    </div>
+  );
+};
+
+export default Components;
+//nodemon server.js

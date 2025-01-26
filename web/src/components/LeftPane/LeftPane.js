@@ -14,22 +14,28 @@ export default function LeftPane() {
         <div className="leftPaneMenu">
             <div className="leftPaneMenuItem">
               < GridViewIcon className='OverallIcon'/>
-              <span className='overall'>Overall</span>
+              <span className='overall' onClick={()=> navigate("/dashboard")}>Dashboard</span>
 
             </div>
-            <div className="leftPaneMenuItem">
-              < LightbulbIcon className='lightIcon'/>
-              <span className='lights'>Lights</span>
-
-            </div>
+           
             <div className="leftPaneMenuItem">
               < TapAndPlayIcon className='addIcon'/>
               <span className='addText' onClick={()=> navigate("/add")}>Add</span>
               
             </div>
             <div className="leftPaneMenuItem">
+              < LightbulbIcon className='lightIcon'/>
+              <span className='lights' onClick={()=> navigate("/Lights")}>Lights</span>
+
+            </div>
+            <div className="leftPaneMenuItem">
               < NotificationsIcon className='OverallIcon'/>
-              <span className='overall'>Fans</span>
+              <span className='overall'  onClick={()=> navigate("/Fan")}>Fans</span>
+
+            </div>
+            <div className="leftPaneMenuItem">
+              < LightbulbIcon className='CameralIcon'/>
+              <span className='cameras'  onClick={()=> navigate("/camera")}>Cameras</span>
 
             </div>
             <div className="leftPaneMenuItem">

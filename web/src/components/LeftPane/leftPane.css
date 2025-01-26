@@ -1,14 +1,17 @@
-/* Updated styles for LeftPane */
 .leftPaneBox {
-    background-color: #2d3436; /* Dark gray background for modern look */
+    background-color: #18191a; /* Dark gray background for modern look */
     color: #ffffff; /* White text for better contrast */
-    flex: 2;
-    width: 200px;
-    height:flex; /* Full viewport height */
+    flex: 2; /* Flex-grow ratio if inside a flex container */
+    width: 80%; /* 20% width of the parent container */
+    height: 650px; /* Full height of the parent container */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Space out children evenly */
+    z-index: 10; /* Ensures this pane stays on top */
+    position: sticky; /* Makes the pane stick during scroll */
+    left: 10; /* Position it at the left edge of the viewport */
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
 }
 
 .leftPaneContainer {
@@ -38,21 +41,22 @@
     transform: translateX(5px); /* Slight movement on hover */
 }
 
-.OverallIcon, .lightIcon, .addIcon {
+.OverallIcon, .lightIcon, .addIcon, .CameralIcon {
     margin-right: 15px;
-    font-size: 2em; /* Icon size */
-    color: #fdcb6e; /* Soft yellow for icons */
+    font-size: 3.5em; /* Increased icon size */
+    color: #6efdde; /* Soft yellow for icons */
     transition: color 0.3s ease;
 }
 
 .leftPaneMenuItem:hover .OverallIcon, 
 .leftPaneMenuItem:hover .lightIcon, 
-.leftPaneMenuItem:hover .addIcon {
-    color: #74b9ff; /* Light blue on hover */
+.leftPaneMenuItem:hover .addIcon, 
+.leftPaneMenuItem:hover .CameralIcon {
+    color: rgb(6, 88, 97); /* Light blue on hover */
 }
 
-.addText, .overall, .lights {
-    font-size: 1.2em; /* Slightly larger text */
+.addText, .overall, .lights, .cameras {
+    font-size: 1.5em; /* Increased text size */
     font-weight: 500; /* Semi-bold for readability */
     color: #dfe6e9; /* Light gray text */
     transition: color 0.3s ease;
@@ -60,13 +64,9 @@
 
 .leftPaneMenuItem:hover .addText, 
 .leftPaneMenuItem:hover .overall, 
-.leftPaneMenuItem:hover .lights {
+.leftPaneMenuItem:hover .lights, 
+.leftPaneMenuItem:hover .cameras {
     color: #ffffff; /* Bright white text on hover */
-}
-
-/* Add some spacing and style to make the left pane look structured */
-.leftPaneBox {
-    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
 }
 
 .leftPaneMenuItem:last-child {

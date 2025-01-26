@@ -30,7 +30,7 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h1>{isEdit ? 'Edit Component' : 'Add Component'}</h1>
       <input
         type="number"
@@ -48,13 +48,14 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
         <option value="" disabled>Select Type</option>
         <option value="fan">Fan</option>
         <option value="light">Light</option>
+        <option value="camera">Camera</option>
         <option value="other">Other</option>
       </select>
       <select value={status} onChange={(e) => setStatus(e.target.value)}>
         <option value="off">Off</option>
         <option value="on">On</option>
       </select>
-      <button onClick={handleSubmit}>{isEdit ? 'Update' : 'Add'}</button>
+      <button className= "button2 " onClick={handleSubmit}>{isEdit ? 'Update' : 'Add'}</button>
     </div>
   );
 };

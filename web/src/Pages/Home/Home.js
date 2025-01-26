@@ -12,7 +12,6 @@ import sliderImage3 from '../../images/slider3.jpg';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-
 export default function Home() {
   const navigate = useNavigate();
 
@@ -39,8 +38,6 @@ export default function Home() {
       },
     ],
   };
-  
-  
 
   return (
     <motion.div 
@@ -49,22 +46,22 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
-      {/* Auto Image Slider */}
-<div className="background-slider">
-  <Slider {...sliderSettings}>
-    <div>
-      <img src={sliderImage1} alt="Slide 1" className="background-slider-image" />
-    </div>
-    <div>
-      <img src={sliderImage2} alt="Slide 2" className="background-slider-image" />
-    </div>
-    <div>
-      <img src={sliderImage3} alt="Slide 3" className="background-slider-image" />
-    </div>
-    {/* Add more images as needed */}
-  </Slider>
-</div>
-
+      <div className="background-slider">
+        <Slider {...sliderSettings}>
+          <div className="slide">
+            <img src={sliderImage2} alt="Slide 1" className="background-slider-image" />
+            <div className="slide-text">Welcome to Our Smart Home</div>
+          </div>
+          <div className="slide">
+            <img src={sliderImage1} alt="Slide 2" className="background-slider-image" />
+            <div className="slide-text">Experience the Future of Living</div>
+          </div>
+          <div className="slide">
+            <img src={sliderImage3} alt="Slide 3" className="background-slider-image" />
+            <div className="slide-text">Connect and Control with Ease</div>
+          </div>
+        </Slider>
+      </div>
 
       <motion.div 
         className="hero-section"
@@ -83,11 +80,7 @@ export default function Home() {
           Get Started
         </motion.button>
       </motion.div>
-      
-      {/* Auto Image Slider */}
-      {/* Auto Image Slider */}
 
-      
       <div className="features-section">
         <motion.div 
           className="feature"
@@ -130,3 +123,4 @@ export default function Home() {
     </motion.div>
   );
 }
+

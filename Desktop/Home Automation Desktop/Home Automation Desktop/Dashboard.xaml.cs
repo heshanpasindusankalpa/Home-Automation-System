@@ -1,60 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MongoDB.Driver;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Home_Automation_Desktop
 {
-    /// <summary>
-    /// Interaction logic for Dashboard.xaml
-    /// </summary>
     public partial class Dashboard : Window
     {
-        private DeviceDbContext db = new DeviceDbContext();
+        private readonly MongoDbContext _context;
+
         public Dashboard()
         {
             InitializeComponent();
-           
-            LoadData();
+            _context = new MongoDbContext();
+           LoadData();
         }
-        private void LoadData()//2
+
+        private void LoadData()
         {
-            deviceGrid.ItemsSource = db.devices.ToList();//3 RENAME GRID
+            try
+            {
+                var devices = _context.Devices.Find(_ => true).ToList();
+                deviceGrid.ItemsSource = devices; // Replace with the actual WPF DataGrid control name
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
-
-
-
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Closes the current window
-            this.Close();
-        }
-
-        
 
         private void Add(object sender, RoutedEventArgs e)
         {
-
-           
-            Devices device = new Devices();
-            AddWindow AWindow = new AddWindow(device);
-            if (AWindow.ShowDialog() == true)
+            var newDevice = new Devices();
+            var addWindow = new AddWindow(newDevice);
+            if (addWindow.ShowDialog() == true)
             {
-                db.devices.Add(device);
-                db.SaveChanges();
+                try
+                {
+                    // Insert the new device into the database
+                    _context.Devices.InsertOne(newDevice);
 
-                LoadData();
+                    // Reload the data grid to reflect the added device
+                    LoadData();
+
+                    MessageBox.Show("Device added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed to add the device: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
+        }
 
+        private void DashboardView(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            this.Close();
 
         }
     }

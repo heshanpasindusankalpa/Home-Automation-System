@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
-namespace Home_Automation_Desktop
+public class Devices
 {
-    public class Devices
-    {
-        [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public bool Status { get; set; }
-    }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
+
+    [BsonElement("Name")]
+    public string Name { get; set; } // Treated as a plain string
+
+    [BsonElement("Type")]
+    public string Type { get; set; }
+
+    [BsonElement("Status")]
+    public bool Status { get; set; }
 }

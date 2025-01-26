@@ -10,7 +10,10 @@ router.delete('/deletecomponent', controller.deleteComponent);
 module.exports = router;*/
 const express = require('express');
 const componentController = require('./controller');
-const sensorRouter = require('./sensorRouter');
+
+
+const sensorController = require('./sensorController');
+
 
 const router = express.Router();
 
@@ -19,7 +22,21 @@ router.post('/addcomponent', componentController.addComponent);
 router.put('/updatecomponent', componentController.updateComponent);
 router.delete('/deletecomponent', componentController.deleteComponent);
 
+exports.getComponentStates = async (req, res) => {
+    try {
+      const components = await Component.find({}, 'name status -_id'); // Fetch only necessary fields
+      const response = components.reduce((acc, component) => {
+        acc[component.name] = component.status; // Example: { led1: "on", bulb: "off" }
+        return acc;
+      }, {});
+      res.status(200).json(response);
+    } catch (error) {
+      res.status(500).json({ error: 'Error fetching component states' });
+    }
+  };
+  
+
 // Sensor data routes
-router.use(sensorRouter);
+router.post('/sensors', sensorController.saveSensorRecord);
 
 module.exports = router;

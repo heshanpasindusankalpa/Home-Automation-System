@@ -1,51 +1,52 @@
-/* ComponentTable.css */
 table {
-    width: 60%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-    
-  }
-  
-  thead {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  th, td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  button {
-    padding: 5px 10px;
-    margin-right: 5px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  .Edit:first-of-type {
-    background-color: #2196F3; /* Edit button - Blue */
-    color: white;
-  }
-  
-  .Delete:last-of-type {
-    background-color: #f44336; /* Delete button - Red */
-    color: white;
-  }
-  
+  width: 70%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+thead {
+  background-color: rgb(6, 88, 97);
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #383d39;
+}
+
+tr:nth-child(even) {
+  background-color: #323131;
+}
+
+tr:nth-child(odd) {
+  background-color: #323131;
+}
+
+tr:hover {
+  background-color: #323131;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.Edit {
+  background-color: #2196F3; /* Edit button - Blue */
+  color: white;
+}
+
+.Delete {
+  background-color: #f44336; /* Delete button - Red */
+  color: white;
+}

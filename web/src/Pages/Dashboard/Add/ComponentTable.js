@@ -6,7 +6,6 @@ const ComponentTable = ({ rows, selectComponent, deleteComponent }) => {
     <table>
       <thead>
         <tr>
-          <th>ID</th>
           <th>Name</th>
           <th>Type</th>
           <th>Status</th>
@@ -15,21 +14,20 @@ const ComponentTable = ({ rows, selectComponent, deleteComponent }) => {
       </thead>
       <tbody>
         {rows.length > 0 ? (
-          rows.map((row) => (
-            <tr key={row.id}>
-              <td>{row.id}</td>
+          rows.map((row, index) => (
+            <tr key={index}>
               <td>{row.name}</td>
               <td>{row.type}</td>
               <td>{row.status}</td>
               <td>
-                <button className="EDit" onClick={() => selectComponent(row)}>Edit</button>
+                <button className="Edit" onClick={() => selectComponent(row)}>Edit</button>
                 <button className="Delete" onClick={() => deleteComponent(row.id)}>Delete</button>
               </td>
             </tr>
           ))
         ) : (
           <tr>
-            <td colSpan="5">No components found</td>
+            <td colSpan="4">No components found</td>
           </tr>
         )}
       </tbody>

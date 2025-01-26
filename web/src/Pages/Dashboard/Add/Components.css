@@ -1,0 +1,27 @@
+.components-page {
+  display: flex;
+  background-color: ivory;
+}
+
+.leftPaneContainer4 {
+  width: 20%;
+}
+
+.main-content4 {
+  width: 80%;
+  display: flex;
+  padding: 10px;
+}
+
+.form-container {
+  width: 60%; /* Adjusted width for form */
+  padding: 10px;
+  background-color: #323131;
+  height: fit-content;
+  margin-right: 20px; /* Space between form and table */
+}
+
+.table-container {
+  width: 60%; /* Adjusted width for table */
+  padding: 10px;
+}

@@ -1,119 +1,113 @@
 ﻿<Window x:Class="Home_Automation_Desktop.Dashboard"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Home_Automation_Desktop"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="850"  AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen"
-        WindowStyle="None"
-        Background="Transparent">
+        Title="Dashboard" Height="600" Width="850" 
+        AllowsTransparency="True" WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" Background="Transparent">
     <Window.Resources>
         <!-- Button Style -->
-        <Style x:Key="CustomButtonStyle" TargetType="Button">
-            <Setter Property="FontFamily" Value="Segoe UI" />
-            <Setter Property="FontSize" Value="16" />
+        <Style x:Key="SidebarButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#556A7F" />
             <Setter Property="Foreground" Value="White" />
-            <Setter Property="Background" Value="#3E454D" />
+            <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="BorderBrush" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Height" Value="45" />
-            <Setter Property="Margin" Value="10" />
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Cursor" Value="Hand" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
-                                CornerRadius="10" 
+                                CornerRadius="10"
                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center" />
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#556A7F" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#2D3944" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
 
-        <!-- Title TextBlock Style -->
-        <Style x:Key="TitleTextStyle" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Segoe UI" />
-            <Setter Property="FontSize" Value="24" />
-            <Setter Property="FontWeight" Value="Bold" />
+        <!-- TextBlock Style -->
+        <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontWeight" Value="SemiBold" />
         </Style>
     </Window.Resources>
+
     <Grid>
-        <!-- Background Border -->
-        <Border Background="#212529" CornerRadius="20">
-            <!-- Main Content -->
+        <!-- Main Border -->
+        <Border Background="#2E303C" CornerRadius="15" Margin="10">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60"/>
-                    <!-- Title Bar -->
-                    <RowDefinition />
-                    <!-- Main Content -->
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <!-- Title Bar -->
-                <Border Background="#556A7F" CornerRadius="20,20,0,0" Grid.Row="0">
-                    <DockPanel LastChildFill="True" Margin="10,0">
-                        <!-- Close Button -->
-                        <Button Content="X" Width="30" Height="30" 
-                                Background="Transparent" Foreground="White" 
-                                FontWeight="Bold" 
-                                VerticalAlignment="Center" HorizontalAlignment="Right"
-                                BorderBrush="Transparent"
-                                Click="CloseButton_Click" />
-                        <!-- Title Text -->
-                        <TextBlock Text="Home Automation Dashboard" 
-                                   Style="{StaticResource TitleTextStyle}" 
-                                   VerticalAlignment="Center" 
-                                   HorizontalAlignment="Center"
-                                   DockPanel.Dock="Left"/>
+                <!-- Header -->
+                <Border Background="#3B3F50" CornerRadius="15,15,0,0">
+                    <DockPanel>
+                        <TextBlock Text="Dashboard" FontSize="22" Foreground="White" 
+                            VerticalAlignment="Center" FontWeight="Bold" Margin="20,0" />
+                        <Button Content="X" Width="30" Height="30" Background="#E74C3C" 
+                         Foreground="White" FontWeight="Bold" 
+                         HorizontalAlignment="Right" VerticalAlignment="Center" 
+                         Click="CloseWindow" BorderThickness="0" />
                     </DockPanel>
                 </Border>
 
-                <!-- Main Content -->
-                <Grid Grid.Row="1">
+                <!-- Main Grid -->
+                <Grid Grid.Row="1" Margin="10">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="228" ></ColumnDefinition>
-                        <!-- Left Column -->
-                        <ColumnDefinition Width="622"></ColumnDefinition>
-                        <!-- Right Column -->
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
 
-                    <Grid HorizontalAlignment="Left" Width="228">
-                        <Border Background="#272B2F" CornerRadius="20,0,0,20" Margin="0,0,-5,-108"/>
-                        <StackPanel Width="228" Margin="5,71,-5,100">
-                            <Button Content="Add" Style="{StaticResource CustomButtonStyle}" Click="Add" />
-                            <Button Content="Lights" Style="{StaticResource CustomButtonStyle}" />
-                            <Button Content="Button" Style="{StaticResource CustomButtonStyle}" />
-                            <Button Content="Button" Style="{StaticResource CustomButtonStyle}" />
-                        </StackPanel>
+                    <!-- Sidebar -->
+                    <StackPanel Background="#292B37" Grid.Column="0" Margin="10" 
+                         Width="230" VerticalAlignment="Stretch">
+                        <Button Content="Dashboard" Style="{StaticResource SidebarButtonStyle}" />
+                        <Button Content="Add" Style="{StaticResource SidebarButtonStyle}" Click="Add" />
+                        <Button Content="Lights" Style="{StaticResource SidebarButtonStyle}" />
+                        <Button Content="Settings" Style="{StaticResource SidebarButtonStyle}" />
+                        <Button Content="About" Style="{StaticResource SidebarButtonStyle}" />
+                    </StackPanel>
+
+                    <!-- Main Content -->
+                    <Grid Grid.Column="1" Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Weather Widget -->
+                        <Border Background="#3B3F50" CornerRadius="10" Margin="10" 
+                         Grid.Row="0" Padding="10">
+                            <StackPanel>
+                                <TextBlock Text="Weather" FontSize="18" FontWeight="Bold" 
+                                    Foreground="White" Margin="5" />
+                                <TextBlock Text="Temperature: 25 °C" FontSize="16" 
+                                    Foreground="White" />
+                                <TextBlock Text="Humidity: 60%" FontSize="16" Foreground="White" />
+                                <TextBlock Text="Condition: Clear Sky" FontSize="16" 
+                                    Foreground="White" />
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Devices Grid -->
+                        <Border Background="#3B3F50" CornerRadius="10" Margin="10" 
+                         Grid.Row="1" Padding="10">
+                            <DataGrid x:Name="deviceGrid" AutoGenerateColumns="True" 
+                               Foreground="White" Background="#292B37" 
+                               RowBackground="#21252E" AlternatingRowBackground="#292B37" />
+                        </Border>
                     </Grid>
                 </Grid>
             </Grid>
         </Border>
-        <DataGrid x:Name="deviceGrid" Background="White"
-                  AutoGenerateColumns="True"
-                  Margin="237,60,0,0" />
-
-
     </Grid>
 </Window>

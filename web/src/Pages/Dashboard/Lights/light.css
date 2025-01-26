@@ -1,0 +1,56 @@
+.light-page {
+  display: flex;
+  background-color: ivory;
+}
+
+.leftPaneContainer2 {
+  width: 20%;
+}
+
+.main-content2 {
+  width: 80%;
+  padding: 20px;
+}
+
+.components-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.light-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.light-item p {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.light-item button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.light-item button:hover {
+  background-color: #0056b3;
+}
