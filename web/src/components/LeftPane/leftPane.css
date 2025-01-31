@@ -2,16 +2,19 @@
     background-color: #18191a; /* Dark gray background for modern look */
     color: #ffffff; /* White text for better contrast */
     flex: 2; /* Flex-grow ratio if inside a flex container */
-    width: 80%; /* 20% width of the parent container */
-    height: 650px; /* Full height of the parent container */
+    width: fit-content; /* 20% width of the parent container */
+    height: 100%; ; /* Full height of the parent container */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Arrange children in a column */
     justify-content: space-between; /* Space out children evenly */
     z-index: 10; /* Ensures this pane stays on top */
     position: sticky; /* Makes the pane stick during scroll */
-    left: 10; /* Position it at the left edge of the viewport */
+    left: 20; /* Position it at the left edge of the viewport */
     border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .leftPaneContainer {
@@ -43,7 +46,7 @@
 
 .OverallIcon, .lightIcon, .addIcon, .CameralIcon {
     margin-right: 15px;
-    font-size: 3.5em; /* Increased icon size */
+    font-size: 2em; /* Increased icon size */
     color: #6efdde; /* Soft yellow for icons */
     transition: color 0.3s ease;
 }
@@ -56,7 +59,7 @@
 }
 
 .addText, .overall, .lights, .cameras {
-    font-size: 1.5em; /* Increased text size */
+    font-size: 2em; /* Increased text size */
     font-weight: 500; /* Semi-bold for readability */
     color: #dfe6e9; /* Light gray text */
     transition: color 0.3s ease;
@@ -71,4 +74,23 @@
 
 .leftPaneMenuItem:last-child {
     margin-bottom: 0; /* Remove margin for the last menu item */
+}
+
+.leftPaneLogo {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    margin-bottom: 0px; /* Add space below the logo */
+}
+
+.sidebarLogo {
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 150px; /* Set a maximum width */
+    border-radius: 10; /* Make the logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.sidebarLogo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }

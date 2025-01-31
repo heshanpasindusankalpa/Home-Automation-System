@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
-import './fans.css'; // Create and customize CSS for Fan page
+import './fans.css'; 
 import LeftPane from '../../../components/LeftPane/LeftPane';
 import FanI from '../../../images/fan2.webp';
 
@@ -20,6 +20,21 @@ const Fan = () => {
       });
   }, []);
 
+  const toggleFan = (id, currentStatus) => {
+    const newStatus = currentStatus === 'on' ? 'off' : 'on';
+    Axios.put(`http://localhost:3001/api/components/${id}`, { status: newStatus })
+      .then(() => {
+        setFans((prevFans) => 
+          prevFans.map((fan) =>
+            fan.id === id ? { ...fan, status: newStatus } : fan
+          )
+        );
+      })
+      .catch((error) => {
+        alert(`Failed to update fan status. Please try again later. Error: ${error.message}`);
+      });
+  };
+
   return (
     <div className="fan-page">
       <div className="leftPaneContainer1">
@@ -31,8 +46,11 @@ const Fan = () => {
           {fans.length > 0 ? (
             fans.map((fan) => (
               <div key={fan.id} className="fan-item">
-                <img src={FanI} />
+                <img src={FanI} alt={fan.name} />
                 <p>{fan.name}</p>
+                <button onClick={() => toggleFan(fan.id, fan.status)}>
+                  Turn {fan.status === 'on' ? 'Off' : 'On'}
+                </button>
               </div>
             ))
           ) : (
@@ -45,4 +63,3 @@ const Fan = () => {
 };
 
 export default Fan;
-

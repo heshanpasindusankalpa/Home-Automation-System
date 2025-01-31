@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './light.css'; 
 import LeftPane from '../../../components/LeftPane/LeftPane';
-import LightOn from '../../../images/light_on.jpg';
-import LightOff from '../../../images/light_off.jpg';
+import LightOn from '../../../images/light_on.PNG';
+import LightOff from '../../../images/light_off.PNG';
 
 const Light = () => {
   const [lights, setLights] = useState([]);
