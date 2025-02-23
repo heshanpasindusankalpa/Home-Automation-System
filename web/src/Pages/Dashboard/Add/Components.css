@@ -1,6 +1,6 @@
 .components-page {
   display: flex;
-  background-color: ivory;
+  background-color: black;
 }
 
 .leftPaneContainer4 {
@@ -11,6 +11,7 @@
   width: 80%;
   display: flex;
   padding: 10px;
+  height: 100%s;
 }
 
 .form-container {
