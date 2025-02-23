@@ -6,19 +6,27 @@ import 'react-circular-progressbar/dist/styles.css';
 import './dashboard.css'; // Adjust CSS path
 import LeftPane from '../../components/LeftPane/LeftPane'; // Adjust path
 import BaloonLight from '../../images/BaloonLight.webp';
+import Clock from 'react-clock';
+import 'react-clock/dist/Clock.css';
 
 const socket = io('http://localhost:3000'); // Replace with your backend's URL
-
 const API_KEY = '7ff3f1c7505846dce72c394d2588a9cc'; // Replace with your OpenWeatherMap API key
 const CITY_ID = '1248991'; // Replace with your city's ID
 
 export default function Dashboard() {
+  // Move useState and useEffect HERE
   const [temperature, setTemperature] = useState(0);
   const [humidity, setHumidity] = useState(0);
   const [weatherDescription, setWeatherDescription] = useState('');
   const [icon, setIcon] = useState('');
   const [currentDate, setCurrentDate] = useState('');
   const [forecast, setForecast] = useState([]);
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => setTime(new Date()), 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     // Fetch weather data from API
@@ -29,7 +37,7 @@ export default function Dashboard() {
         setTemperature(data.main.temp);
         setHumidity(data.main.humidity);
         setWeatherDescription(data.weather[0].description);
-        setIcon(`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`); // Use @2x or @4x for higher resolution
+        setIcon(`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
       } catch (error) {
         console.error('Error fetching weather data', error);
       }
@@ -40,7 +48,6 @@ export default function Dashboard() {
       try {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?id=${CITY_ID}&appid=${API_KEY}&units=metric`);
         const data = response.data;
-        // Extract forecast for the next 5 days at noon (12:00)
         const forecastData = data.list.filter(item => item.dt_txt.includes('12:00:00'));
         setForecast(forecastData);
       } catch (error) {
@@ -79,42 +86,41 @@ export default function Dashboard() {
       </div>
 
       <div className="mainContent">
-      <div className="widgetSection">
+        <div className="widgetSection">
           <h2>Weather</h2>
           <div className="TodayandHumidity">
-          <div className="weatherWidget">
-            <div className="weatherHeader">
-              <h3>Weather Today</h3>
-              <img src={icon} alt="Weather icon" />
+            <div className="weatherWidget">
+              <div className="weatherHeader">
+                <h3>Weather Today</h3>
+                <img src={icon} alt="Weather icon" />
+              </div>
+              <div className="weatherDetails">
+                <div className="temperature">
+                  <h3 className='tem'>Temperature</h3>
+                  <p>{temperature} °C</p>
+                </div>
+                <div className="description">
+                  <h3>Condition</h3>
+                  <p>{weatherDescription}</p>
+                </div>
+              </div>
             </div>
-            <div className="weatherDetails">
-              <div className="temperature">
-                <h3 className='tem'>Temperature</h3>
-                <p>{temperature} °C</p>
-              </div>
-              <div className="description">
-                <h3>Condition</h3>
-                <p>{weatherDescription}</p>
-              </div>
+            
+            <div className="widget">
+              <h3>Humidity</h3>
+              <CircularProgressbar 
+                value={humidity} 
+                text={`${humidity}%`} 
+                styles={buildStyles({
+                  textColor: "#fff",
+                  pathColor: "#F96E2A",
+                  trailColor: "#d6d6d6"
+                })}
+              />
             </div>
           </div>
-          
-          <div className="widget">
-            <h3>Humidity</h3>
-            <CircularProgressbar 
-              value={humidity} 
-              text={`${humidity}%`} 
-              styles={buildStyles({
-                textColor: "#fff",
-                pathColor: "#F96E2A",
-                trailColor: "#d6d6d6"
-              })}
-            />
-          </div>
-        </div>
         </div>
 
-          
         <div className="widgetSection">
           <div className="forecastSection">
             <h3>5-Day Forecast</h3>
@@ -128,29 +134,29 @@ export default function Dashboard() {
               ))}
             </div>
           </div>
-          </div>
-        
-
-          
+        </div>
       </div>
 
       <div className="rightPane">
         <div className="widgetSection">
           <h2>Date & Time</h2>
+          <div  className="TimeandDate">
           <div className="Datewidget">
             <h3>Current Date</h3>
             <p>{currentDate}</p>
+           
           </div>
-          
+          <div className="clockwidget">
+          <Clock value={time} />
+          </div>
+          </div>
         </div>
 
         <div className="widgetSection">
           <h2>Lighting</h2>
           <div className="Lightwidget">
-          <img src={BaloonLight} alt="light" className="baloonLight-image" />
-            
+            <img src={BaloonLight} alt="light" className="baloonLight-image" />
           </div>
-          
         </div>
       </div>
     </div>

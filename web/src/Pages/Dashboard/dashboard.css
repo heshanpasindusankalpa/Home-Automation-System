@@ -272,8 +272,41 @@ body {
     font-size: 1.25rem;
     font-weight: bold;
 }
+.clockwidget{
+    background:black; /* Adds transparency */
+ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 
+}
+ .clockwidget .react-clock {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+   }
+
+  .TimeandDate{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+  }
+
+  
+  .clockwidget .react-clock__mark__number {
+    fill: #EEEEEE; /* Light color for numbers */
+    font-weight: bold;
+  }
 
 /* Animations */
 @keyframes fadeIn {
