@@ -13,6 +13,6 @@ namespace Home_Automation_Desktop
             _database = client.GetDatabase("test"); // Replace with your database name
         }
 
-        public IMongoCollection<Devices> Devices => _database.GetCollection<Devices>("components"); // Replace "Devices" with your collection name
+        public IMongoCollection<Devices> Devices => _database.GetCollection<Devices>("components"); // Access the 'components' collection
     }
 }

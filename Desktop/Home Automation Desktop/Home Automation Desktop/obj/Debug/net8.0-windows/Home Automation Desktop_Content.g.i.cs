@@ -8,6 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/camera_on.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/light_off.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/light_on.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo.gif")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/slider2.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/slider3.jpg")]
 

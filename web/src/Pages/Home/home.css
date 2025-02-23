@@ -3,9 +3,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  }
+  margin-top: 0;
+}
 
-  
 .slide {
   position: relative;
 }
@@ -29,12 +29,10 @@ body {
   overflow-y: auto;
 }
 
-
-
 .title {
   font-size: 3rem;
   margin-bottom: 5px;
-  color:ivory;
+  color: ivory;
 }
 
 .subtitle {
@@ -43,7 +41,7 @@ body {
 }
 
 .cta-button {
-  background-color:rgb(6, 88, 97); /* Ensure green is the initial color */
+  background-color: #1C7293; /* Ensure green is the initial color */
   color: rgb(246, 244, 244);
   padding: 15px 10px;
   border: none;
@@ -52,14 +50,31 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
   width: 20%;
-  
+  position: relative; /* Required for pseudo-elements */
+  overflow: hidden; /* Ensures the glow effect stays within the button */
 }
 
 .cta-button:hover {
   background-color: #e5f1ed;
   color: #050404;
-  
-  /* Darker green for hover effect */
+}
+
+/* Glowing/Lighting Effect */
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 70%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+  pointer-events: none; /* Ensures the pseudo-element doesn't interfere with clicks */
+}
+
+.cta-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .features-section {
@@ -69,32 +84,74 @@ body {
   padding: 50px 20px;
   background-color:ivory;
   position: relative;
-z-index: 1;
+  z-index: -2;
 }
 
 .feature {
   text-align: center;
-  margin: 20px;
-  flex: 1 1 300px;
-  max-width: 300px;
-  background:white;
+  margin: 0 auto;
+  flex: 1 1 200px;
+  max-width: 250px;
+  background:#323131;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2em;
+ /* transition: transform 0.3s, box-shadow 0.3s;*/
+  position: relative;
+ /* overflow: hidden;  Ensures the glow effect stays within the border */
+ /* z-index: -2;Ensure the feature content is above the pseudo-elements */
 }
-
+/*
 .feature:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}*/
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.feature::after,.feature::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, #B9E3C6);
+ z-index: -1;
+  border-radius: 20px;
+  animation: 5s spin linear infinite;
+  padding: 5px;
+
+}
+
+.feature::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+   /* Ensure the blur effect is behind the ::after element */
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 .feature-icon {
-  width: 160px;
-  height: 130px;
-  margin-bottom: 15px;
+  width: 200px;
+  height: 170px;
+  margin-bottom: 0px;
 }
-
+.feature-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 .feature h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -102,88 +159,168 @@ z-index: 1;
 
 .feature p {
   font-size: 1rem;
-  color: #666;
+  color: #070707;
 }
-/* Global styling for Home Automation Home Page */
-
-
 
 .home-container {
-text-align: center;
+  text-align: center;
 }
 
 .hero-section {
-background: linear-gradient(135deg, #080808, #525353);
-color: white;
-padding: 70px 20px;
+  background: linear-gradient(135deg, #080808, #525353);
+  color: white;
+  padding: 70px 20px;
 }
 
 .title {
-font-size: 2.5rem;
-margin-bottom: 5px;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
 }
 
 .subtitle {
-font-size: 1.2rem;
-margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-
 .extra-section {
-padding: 50px 20px;
-background-color: #f4f4f4;
-text-align: center;
-border-top: 1px solid #ccc;
+  padding: 50px 20px;
+  background-color: #111010;
+  text-align: center;
+  border-top: 1px solid #ccc;
 }
 
 .extra-section h2 {
-font-size: 2rem;
-margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .extra-section p {
-font-size: 1.2rem;
-color:ivory;
+  font-size: 1.2rem;
+  color: ivory;
 }
+
 .slider-container {
-position: relative;
-width: 100%;
-height: 300px;
-overflow: hidden;
-z-index: -1; /* Places slider behind other content */
-margin-bottom: -150px; /* Adjust this value based on design */
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  z-index: -1; /* Places slider behind other content */
+  margin-bottom: -150px; /* Adjust this value based on design */
+  margin-top: 0;
 }
 
 .slider-image {
-width: 100%;
-height: 200px;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+ /* object-fit: cover;*/
 }
-/* Background Slider */
+
 /* Background Slider */
 .background-slider {
-position: relative;
-z-index: 1;
-width: 100%;
-height: 300px; /* Allow dynamic height adjustment */
-overflow: hidden;
-margin-top: 0px;
+  /*position: relative;*/
+  z-index: 1;
+  width: 100%;
+  height:300px; /* Allow dynamic height adjustment */
+  /*overflow: hidden;*/
+  top:0px;
 }
 
 .background-slider .slick-slider {
-display: flex;
-align-items: center;
+ /* display: flex;*/
+  align-items: center;
 }
 
 .background-slider-image {
-width: 100%;
-height: 300px;
-object-fit: cover; /* Ensure images scale proportionally */
-border-radius: 0px; /* Optional: Add rounded corners */
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Ensure images scale proportionally */
+  border-radius: 0px;
+  top:0; /* Optional: Add rounded corners */
 }
 
 
 
-/* Ensure features-section is above slider */
+/* Optional: Add a continuous glowing animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(204, 118, 118, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+}
 
+.cta-button.glow {
+  animation: glow 2s infinite;
+}
 
+/* New section for the bottom image */
+.bottom-image-section {
+  margin-top: 50px;
+  text-align: center;
+  position: relative; /* Required for positioning the overlay */
+}
+
+.bottom-image {
+  width: 80%;
+  height: 700px;
+  border-radius: 10px;
+  left: 0px;
+  position: relative; /* Ensure the image is positioned correctly */
+  z-index: 1; /* Ensure the image is above the overlay */
+}
+
+/* Overlay with blur and transparency */
+.bottom-image-section::before {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: 10%; /* Match the width of the image (80% width + 10% left margin) */
+  width: 100%; /* Match the width of the image */
+  height: 50%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 10px; /* Match the image's border radius */
+  z-index: 2; /* Ensure the overlay is above the image */
+  pointer-events: none; /* Allow clicks to pass through to the image */
+}
+
+/* Container for IoT tech details text */
+.iot-text-overlay {
+  position: absolute;
+  top: 100px; /* Match the overlay's top position */
+  left: 10%; /* Match the overlay's left position */
+  width: 100%; /* Match the overlay's width */
+  height: 50%; /* Match the overlay's height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3; /* Ensure the text is above the overlay */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.iot-text-overlay p {
+  color: #171515; /* White text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: moveText 5s infinite ease-in-out; /* Apply the animation */
+}
+
+/* Optional: Add animation to the text */
+@keyframes moveText {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}

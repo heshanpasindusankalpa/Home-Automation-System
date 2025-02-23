@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import io from 'socket.io-client';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import './dashboard.css'; // Adjust CSS path
 import LeftPane from '../../components/LeftPane/LeftPane'; // Adjust path
 
@@ -76,8 +78,9 @@ export default function Dashboard() {
       </div>
 
       <div className="mainContent">
-        <div className="widgetSection">
+        
           <h2>Weather</h2>
+          <div className="TodayandHumidity">
           <div className="weatherWidget">
             <div className="weatherHeader">
               <h3>Weather Today</h3>
@@ -85,7 +88,7 @@ export default function Dashboard() {
             </div>
             <div className="weatherDetails">
               <div className="temperature">
-                <h3>Temperature</h3>
+                <h3 className='tem'>Temperature</h3>
                 <p>{temperature} °C</p>
               </div>
               <div className="description">
@@ -94,6 +97,22 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+          
+          <div className="widget">
+            <h3>Humidity</h3>
+            <CircularProgressbar 
+              value={humidity} 
+              text={`${humidity}%`} 
+              styles={buildStyles({
+                textColor: "#fff",
+                pathColor: "#F96E2A",
+                trailColor: "#d6d6d6"
+              })}
+            />
+          </div>
+        </div>
+
+          
 
           <div className="forecastSection">
             <h3>5-Day Forecast</h3>
@@ -107,24 +126,28 @@ export default function Dashboard() {
               ))}
             </div>
           </div>
-        </div>
+        
 
-        <div className="widgetSection">
-          <h2>Environment</h2>
-          <div className="widget">
-            <h3>Humidity</h3>
-            <p>{humidity} %</p>
-          </div>
-        </div>
+          
       </div>
 
       <div className="rightPane">
         <div className="widgetSection">
           <h2>Date & Time</h2>
-          <div className="widget">
+          <div className="Datewidget">
             <h3>Current Date</h3>
             <p>{currentDate}</p>
           </div>
+          
+        </div>
+
+        <div className="widgetSection">
+          <h2>Date & Time</h2>
+          <div className="Datewidget">
+            <h3>Current Date</h3>
+            <p>{currentDate}</p>
+          </div>
+          
         </div>
       </div>
     </div>

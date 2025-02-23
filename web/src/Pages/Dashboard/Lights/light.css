@@ -1,15 +1,25 @@
 .light-page {
   display: flex;
   background-color: ivory;
+  height: 100vh; /* Ensure the page takes the full viewport height */
+  overflow: hidden; /* Prevent the entire page from scrolling */
 }
 
 .leftPaneContainer2 {
   width: 20%;
+  position: fixed; /* Fix the left pane */
+  height: 100vh; /* Make it full height */
+  overflow-y: auto; /* Allow scrolling if the content exceeds the height */
+  background-color: #f4f4f4; /* Optional: Add a background color */
+  z-index: 1; /* Ensure it stays above other content */
 }
 
 .main-content2 {
   width: 80%;
   padding: 20px;
+  margin-left: 20%; /* Offset for the fixed left pane */
+  height: 100vh; /* Make it full height */
+  overflow-y: auto; /* Allow scrolling for the lights widgets */
 }
 
 .components-list2 {
@@ -19,31 +29,43 @@
 }
 
 .light-item {
-  background: #fff;
-  border: 1px solid #141313;
+  background: #323131;
+  border: 1px solid #f3ebeb;
   border-radius: 10px;
   padding: 15px;
   width: 200px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.light-item:hover {
+  background: #3e3e3e;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .light-item img {
-  width: 100%;
+  width: 90%;
   height: 200px;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: filter 0.3s ease;
+}
+
+.light-item img:hover {
+  filter: brightness(1.1);
 }
 
 .light-item p {
   margin-bottom: 10px;
   font-size: 1.2em;
-  color: #333;
+  color: white;
 }
 
 .light-item button {
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #1C7293;
   color: white;
   border: none;
   border-radius: 5px;

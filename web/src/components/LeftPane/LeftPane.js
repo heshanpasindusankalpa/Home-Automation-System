@@ -12,14 +12,7 @@ export default function LeftPane() {
   return (
     <div className='leftPaneBox'>
       <div className='leftPaneContainer'>
-        {/* Add an image at the top */}
-        <div className="leftPaneLogo">
-          <img 
-            src={LogoL}
-            alt="Logo" 
-            className="sidebarLogo"
-          />
-        </div>
+      
         <div className='leftPaneMenu'>
           <div className='leftPaneMenuItem'>
             <GridViewIcon className='OverallIcon' />

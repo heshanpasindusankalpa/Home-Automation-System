@@ -20,8 +20,8 @@ const ComponentTable = ({ rows, selectComponent, deleteComponent }) => {
               <td>{row.type}</td>
               <td>{row.status}</td>
               <td>
-                <button className="Edit" onClick={() => selectComponent(row)}>Edit</button>
-                <button className="Delete" onClick={() => deleteComponent(row.id)}>Delete</button>
+                <button className="EditB" onClick={() => selectComponent(row)}>Edit</button>
+                <button className="DeleteB" onClick={() => deleteComponent(row.id)}>Delete</button>
               </td>
             </tr>
           ))

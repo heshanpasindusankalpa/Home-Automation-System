@@ -1,113 +1,30 @@
 ﻿<Window x:Class="Home_Automation_Desktop.Dashboard"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dashboard" Height="600" Width="850" 
-        AllowsTransparency="True" WindowStartupLocation="CenterScreen" 
-        WindowStyle="None" Background="Transparent">
-    <Window.Resources>
-        <!-- Button Style -->
-        <Style x:Key="SidebarButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#556A7F" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="BorderBrush" Value="Transparent" />
-            <Setter Property="Margin" Value="5" />
-            <Setter Property="Padding" Value="10" />
-            <Setter Property="Height" Value="40" />
-            <Setter Property="Width" Value="200" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                CornerRadius="10"
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="1">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <!-- TextBlock Style -->
-        <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="FontWeight" Value="SemiBold" />
-        </Style>
-    </Window.Resources>
-
+        Title="Dashboard" Height="600" Width="1000">
     <Grid>
-        <!-- Main Border -->
-        <Border Background="#2E303C" CornerRadius="15" Margin="10">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-                <!-- Header -->
-                <Border Background="#3B3F50" CornerRadius="15,15,0,0">
-                    <DockPanel>
-                        <TextBlock Text="Dashboard" FontSize="22" Foreground="White" 
-                            VerticalAlignment="Center" FontWeight="Bold" Margin="20,0" />
-                        <Button Content="X" Width="30" Height="30" Background="#E74C3C" 
-                         Foreground="White" FontWeight="Bold" 
-                         HorizontalAlignment="Right" VerticalAlignment="Center" 
-                         Click="CloseWindow" BorderThickness="0" />
-                    </DockPanel>
-                </Border>
+        <!-- Sidebar with Buttons -->
+        <StackPanel Grid.Column="0" Background="#333333" Width="150">
+            <Button Content="Dashboard" Click="Dashboard_Click" Margin="5" Background="Green"/>
+            <Button Content="Lights" Click="Lights_Click" Margin="5" Background="Green" />
+            <Button Content="Fans" Click="Fans_Click" Margin="5" Background="Green"/>
+            <Button Content="Cameras" Click="Cameras_Click" Margin="5" Background="Green"/>
+            <Button Content="Devices" Click="Devices_Click" Margin="5" Background="Green"/>
+            <Button Content="Add" Click="Add_Click" Margin="5" Background="Green"/>
+        </StackPanel>
 
-                <!-- Main Grid -->
-                <Grid Grid.Row="1" Margin="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="250" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+        <!-- Right Content Section -->
+        <Grid Grid.Column="1">
+            <ContentControl x:Name="ContentSection"/>
 
-                    <!-- Sidebar -->
-                    <StackPanel Background="#292B37" Grid.Column="0" Margin="10" 
-                         Width="230" VerticalAlignment="Stretch">
-                        <Button Content="Dashboard" Style="{StaticResource SidebarButtonStyle}" />
-                        <Button Content="Add" Style="{StaticResource SidebarButtonStyle}" Click="Add" />
-                        <Button Content="Lights" Style="{StaticResource SidebarButtonStyle}" />
-                        <Button Content="Settings" Style="{StaticResource SidebarButtonStyle}" />
-                        <Button Content="About" Style="{StaticResource SidebarButtonStyle}" />
-                    </StackPanel>
-
-                    <!-- Main Content -->
-                    <Grid Grid.Column="1" Margin="10">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
-
-                        <!-- Weather Widget -->
-                        <Border Background="#3B3F50" CornerRadius="10" Margin="10" 
-                         Grid.Row="0" Padding="10">
-                            <StackPanel>
-                                <TextBlock Text="Weather" FontSize="18" FontWeight="Bold" 
-                                    Foreground="White" Margin="5" />
-                                <TextBlock Text="Temperature: 25 °C" FontSize="16" 
-                                    Foreground="White" />
-                                <TextBlock Text="Humidity: 60%" FontSize="16" Foreground="White" />
-                                <TextBlock Text="Condition: Clear Sky" FontSize="16" 
-                                    Foreground="White" />
-                            </StackPanel>
-                        </Border>
-
-                        <!-- Devices Grid -->
-                        <Border Background="#3B3F50" CornerRadius="10" Margin="10" 
-                         Grid.Row="1" Padding="10">
-                            <DataGrid x:Name="deviceGrid" AutoGenerateColumns="True" 
-                               Foreground="White" Background="#292B37" 
-                               RowBackground="#21252E" AlternatingRowBackground="#292B37" />
-                        </Border>
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Border>
+            <!-- Add the missing DataGrid -->
+            <DataGrid x:Name="deviceGrid" AutoGenerateColumns="True" Visibility="Collapsed"
+                      Margin="10" />
+        </Grid>
     </Grid>
 </Window>

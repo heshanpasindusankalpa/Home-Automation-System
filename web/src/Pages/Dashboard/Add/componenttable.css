@@ -1,5 +1,5 @@
 table {
-  width: 70%;
+  width: 80%;
   border-collapse: collapse;
   margin: 20px auto;
   font-size: 18px;
@@ -28,25 +28,25 @@ tr:hover {
   background-color: #323131;
 }
 
-button {
+.EditB,.DeleteB {
   padding: 5px 10px;
   margin-right: 5px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
-button:hover {
+.EditB,.DeleteB:hover {
   opacity: 0.8;
 }
 
-.Edit {
-  background-color: #2196F3; /* Edit button - Blue */
-  color: white;
+.EditB {
+  background-color: #B9E3C6; /* Edit button - Blue */
+  color: #272932;
 }
 
-.Delete {
-  background-color: #f44336; /* Delete button - Red */
-  color: white;
+.DeleteB {
+  background-color: #1C7293; /* Delete button - Red */
+  color: #F1F2EB;
 }

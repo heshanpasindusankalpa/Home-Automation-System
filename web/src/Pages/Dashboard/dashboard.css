@@ -1,10 +1,10 @@
-/* General Body Styles */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: ivory; /* Dark background color */
+    background-color: ivory; 
     animation: fadeIn 1s ease-in-out;
-    color: #ffffff; /* Light text color for contrast */
+    color: #F1F2EB; /* Light text color for contrast */
 }
 
 /* Dashboard Styling */
@@ -21,24 +21,26 @@ body {
     grid-area: mainContent;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #ffffff; /* Light text color for contrast */
+    color: black; /* Light text color for contrast */
+   
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
 /* Right Pane */
 .rightPane {
     grid-area: rightPane;
-    background-color: rgba(82, 83, 83, 0.1); /* Transparent background with a gradient tone */
+   /* background-color: rgba(82, 83, 83, 0.1);  Transparent background with a gradient tone */
     border-radius: 10px;
     padding: 15px;
-    color: #ffffff; /* Light text color for contrast */
+    color: black; /* Light text color for contrast */
     width: 250px;
     backdrop-filter: blur(10px); /* Apply blur effect */
+    gap: 25px;
 }
 .leftPane{
 
@@ -47,21 +49,26 @@ body {
 /* Widget Section */
 .widgetSection {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+   flex-direction: column;
+    gap: 10px;
     padding: 10px;
     background: rgba(236, 242, 239, 0.1); /* Light transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
-
+.TodayandHumidity
+{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
 /* Weather Widget Styling */
 .weatherWidget {
-    background: linear-gradient(135deg, #0699b6, #89cddd); /* Dark gradient */
+    background: linear-gradient(135deg, #1C7293, #B9E3C6); /* Dark gradient */
     box-shadow: 0 4px 6px rgba(20, 120, 133, 0.4);
     border-radius: 15px;
-    width: 300px;
+    width: 320px;
     height: 250px; /* Increased height for more content */
     display: flex;
     flex-direction: column;
@@ -83,6 +90,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    color: black;
 }
 
 .weatherHeader img {
@@ -107,6 +115,7 @@ body {
 .weatherWidget h3 {
     font-size: 1.75rem;
     margin-bottom: 5px;
+    color: #000;
 }
 
 .weatherWidget p {
@@ -116,19 +125,19 @@ body {
 
 /* Forecast Section */
 .forecastSection {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .forecast {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
 }
 
 .forecastItem {
     background: linear-gradient(135deg, #444444, #666666); /* Darker gradient for forecast */
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     color: #e0e0e0; /* Light text color for contrast */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -143,14 +152,17 @@ body {
 .forecastItem p {
     margin: 5px 0;
 }
-
+.forecastSection h3 
+{
+   color: #000; 
+}
 /* Widget Styling */
 .widget {
     background: linear-gradient(135deg, #333333, #555555); /* Dark gradient */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     width: 200px;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,12 +180,46 @@ body {
 .widget h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color:black;
 }
 
 .widget p {
     font-size: 1.25rem;
     font-weight: bold;
 }
+
+.Datewidget{
+    background: linear-gradient(135deg, #333333, #555555); /* Dark gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Light text color for contrast */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.Datewidget:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+.Datewidget h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.Datewidget p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
 
 /* Animations */
 @keyframes fadeIn {

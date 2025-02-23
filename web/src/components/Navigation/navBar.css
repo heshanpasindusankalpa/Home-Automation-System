@@ -1,7 +1,11 @@
 .navBarBox {
-    height: 80px; 
+    height: 70px; 
     width: 100%;
-    background-color: #0f100f; /* A deeper green to represent sustainability and automation */
+    /*
+    background:rgba(0, 0, 0, 0.2); /* A deeper green to represent sustainability and automation 
+    backdrop-filter: blur(10px); /* Apply blur effect 
+    -webkit-backdrop-filter: blur(10px); */
+    background-color: #181717;
     display: flex;
     align-items: center;
     position: sticky;
@@ -20,15 +24,15 @@
  .logo {
     font-size: 32px;
     font-weight: bold;
-    color: #FFF; /* White for visibility */
+    color: ivory; /* White for visibility */
     cursor: pointer;
     text-transform: uppercase;
     transition: color 0.3s ease;
  }
  
- .logo:hover {
-    color: #F2F2F2; /* Slight hover effect for interactivity */
- }
+/* .logo:hover {
+    color: #F2F2F2; // Slight hover effect for interactivity 
+ }*/
  
  .navBarCenter {
     flex: 5;
@@ -54,7 +58,7 @@
  .navBarLink {
     margin-left: 15px;
     font-size: 18px;
-    color: #FFF;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -84,16 +88,6 @@
     transform: scale(1.1); /* Subtle zoom effect */
  }
  
- .searchBarBox {
-    width: 300px;
-    height: 40px;
-    background-color: #E8F6F3; /* A light greenish-white background */
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
- }
  
  .searchIcon {
     color: #235E44;

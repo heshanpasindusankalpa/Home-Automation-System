@@ -29,7 +29,7 @@ export default function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className='icons'>
-        <div className='LoginIcon'><AccountCircleIcon/></div>
+        <div className="LoginIcon"><AccountCircleIcon/></div>
 
         </div>
         <h2>Login</h2>
@@ -56,7 +56,7 @@ export default function Login() {
 
           {error && <p className="error-text">{error}</p>}
 
-          <button type="submit">Login</button>
+          <button className="loginB">Login</button>
         </form>
        
       </div>

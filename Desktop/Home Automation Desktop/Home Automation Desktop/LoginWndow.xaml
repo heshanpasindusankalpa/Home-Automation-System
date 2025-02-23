@@ -3,11 +3,121 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Home_Automation_Desktop"
         mc:Ignorable="d"
-        Title="LoginWndow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Login" HorizontalAlignment="Center" Height="52" Margin="0,285,0,0" VerticalAlignment="Top" Width="188" Click="Button_Click"/>
+        Title="Login" Height="624" Width="853"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="Black">
 
+    <Grid>
+        <!-- Background Image -->
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/slider2.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <!-- Blurred Background Box -->
+        <Border Width="300"
+                Height="350"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            <Border.Effect>
+                <BlurEffect Radius="10"/>
+            </Border.Effect>
+            <Border Background="#33FFFFFF" CornerRadius="10"/>
+        </Border>
+
+        <!-- Login Box (No Blur Applied Here) -->
+        <Border Background="#33FFFFFF"
+                CornerRadius="10"
+                Padding="20"
+                Width="300"
+                Height="350"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+            <StackPanel VerticalAlignment="Center" Background="Transparent">
+                <!-- Login Icon -->
+                <Viewbox Width="50" Height="50" HorizontalAlignment="Center" Margin="0,0,0,20">
+                    <Canvas>
+                        <Path Data="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3-1.34-3 3-3 3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                              Fill="Black"/>
+                    </Canvas>
+                </Viewbox>
+
+                <!-- Login Title -->
+                <TextBlock Text="Login"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"
+                           Foreground="Black"/>
+
+                <!-- Username Field -->
+                <TextBox x:Name="UsernameTextBox"
+                         Text="Enter your username"
+                         GotFocus="UsernameTextBox_GotFocus"
+                         Margin="0,0,0,10"
+                         FontSize="14"
+                         Padding="5"
+                         Background="White"
+                         BorderBrush="#CCC"
+                         BorderThickness="1"
+                         Foreground="Black"/>
+
+                <!-- Password Field -->
+                <PasswordBox x:Name="PasswordBox"
+                             GotFocus="PasswordBox_GotFocus"
+                             Margin="0,0,0,10"
+                             FontSize="14"
+                             Padding="5"
+                             Background="White"
+                             BorderBrush="#CCC"
+                             BorderThickness="1"
+                             Foreground="Black"/>
+
+                <!-- Error Message -->
+                <TextBlock x:Name="ErrorText"
+                           Text=""
+                           Foreground="Red"
+                           FontSize="14"
+                           HorizontalAlignment="Center"
+                           Margin="0,10,0,10"
+                           Visibility="Collapsed"/>
+
+                <!-- Login Button (Now Clear) -->
+                <Button x:Name="LoginButton"
+                        Content="Login"
+                        Click="LoginButton_Click"
+                        Background="#1C7293"
+                        Foreground="White"
+                        FontSize="16"
+                        Padding="10"
+                        BorderThickness="0"
+                        HorizontalAlignment="Stretch"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="5"
+                                                Padding="{TemplateBinding Padding}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="OverridesDefaultStyle" Value="True"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#B9E3C6"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

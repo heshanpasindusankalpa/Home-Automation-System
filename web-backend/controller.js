@@ -39,3 +39,26 @@ exports.deleteComponent = async (req, res) => {
     res.status(500).json({ error: 'Error deleting component' });
   }
 };
+exports.getComponentStates = async (req, res) => {
+  try {
+    const components = await Component.find({}, 'name status -_id');
+    
+    // Handle empty response case
+    if (!components.length) {
+      return res.status(404).json({ message: 'No components found' });
+    }
+
+    const response = components.reduce((acc, component) => {
+      acc[component.name] = component.status;
+      return acc;
+    }, {});
+    
+    res.status(200).json(response);
+  } catch (error) {
+    console.error('Database error:', error); // Add logging
+    res.status(500).json({ 
+      error: 'Error fetching component states',
+      details: error.message 
+    });
+  }
+};

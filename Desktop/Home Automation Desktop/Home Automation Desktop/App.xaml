@@ -4,6 +4,19 @@
              xmlns:local="clr-namespace:Home_Automation_Desktop"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+        </Style>
+
+        <Style TargetType="StackPanel">
+            <Setter Property="Background" Value="#1C1C1C" />
+            <Setter Property="Margin" Value="10" />
+           
+        </Style>
+
+
     </Application.Resources>
 </Application>

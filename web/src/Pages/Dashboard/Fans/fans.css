@@ -19,7 +19,7 @@
 }
 
 .fan-item {
-  background: #fff;
+  background: #323131;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
@@ -37,7 +37,7 @@
 
 .fan-item button {
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #1C7293;
   color: white;
   border: none;
   border-radius: 5px;

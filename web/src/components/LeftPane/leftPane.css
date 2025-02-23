@@ -12,7 +12,7 @@
     position: sticky; /* Makes the pane stick during scroll */
     left: 20; /* Position it at the left edge of the viewport */
     border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: 20px;
     margin-left: 10px;
 }

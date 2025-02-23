@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './light.css'; 
 import LeftPane from '../../../components/LeftPane/LeftPane';
-import LightOn from '../../../images/light_on.PNG';
-import LightOff from '../../../images/light_off.PNG';
+import LightOn from '../../../images/light_off.PNG';
+import LightOff from '../../../images/light_on.PNG';
 
 const Light = () => {
   const [lights, setLights] = useState([]);
@@ -38,27 +38,27 @@ const Light = () => {
 
   return (
     <div className="light-page">
-      <div className="leftPaneContainer2">
-        <LeftPane />
-      </div>
-      <div className="main-content2">
-        <h2>Lights</h2>
-        <div className="components-list2">
-          {lights.length > 0 ? (
-            lights.map((light) => (
-              <div key={light.id} className="light-item">
-                <img src={light.status === 'on' ? LightOn : LightOff} alt={light.name} />
-                <p>{light.name}</p>
-                <button onClick={() => toggleLight(light.id, light.status)}>
-                  Turn {light.status === 'on' ? 'Off' : 'On'}
-                </button>
-              </div>
-            ))
-          ) : (
-            <p>No lights found</p>
-          )}
+    <div className="leftPaneContainer2">
+  <LeftPane />
+</div>
+<div className="main-content2">
+  <h2>Lights</h2>
+  <div className="components-list2">
+    {lights.length > 0 ? (
+      lights.map((light) => (
+        <div key={light.id} className="light-item">
+          <img src={light.status === 'on' ? LightOn : LightOff} alt={light.name} />
+          <p>{light.name}</p>
+          <button onClick={() => toggleLight(light.id, light.status)}>
+            Turn {light.status === 'on' ? 'Off' : 'On'}
+          </button>
         </div>
-      </div>
+      ))
+    ) : (
+      <p>No lights found</p>
+    )}
+  </div>
+</div>
     </div>
   );
 };
