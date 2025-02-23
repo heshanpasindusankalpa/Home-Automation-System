@@ -2,9 +2,9 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: ivory; 
+   /* background-color: ivory; */
     animation: fadeIn 1s ease-in-out;
-    color: #F1F2EB; /* Light text color for contrast */
+    /*color: #F1F2EB; *//* Light text color for contrast */
 }
 
 /* Dashboard Styling */
@@ -14,19 +14,21 @@ body {
     padding: 0;
     height: 100vh;
     grid-template-areas: "leftPane mainContent rightPane";
+    background: #000;
 }
 
 /* Main Content */
 .mainContent {
     grid-area: mainContent;
+    background: #000;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+ /* Light transparent background */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: black; /* Light text color for contrast */
+    color:#EEEEEE; /* Light text color for contrast */
    
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
@@ -37,10 +39,14 @@ body {
    /* background-color: rgba(82, 83, 83, 0.1);  Transparent background with a gradient tone */
     border-radius: 10px;
     padding: 15px;
-    color: black; /* Light text color for contrast */
-    width: 250px;
+    color: #EEEEEE; /* Light text color for contrast */
+    width: 400px;
     backdrop-filter: blur(10px); /* Apply blur effect */
-    gap: 25px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    background-color:black ;
+
 }
 .leftPane{
 
@@ -50,9 +56,11 @@ body {
 .widgetSection {
     display: flex;
    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    background: rgba(236, 242, 239, 0.1); /* Light transparent background */
+    gap: 30spx;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Adds transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+      -webkit-backdrop-filter: blur(10px);  /* Light transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px); /* Apply blur effect */
@@ -158,7 +166,7 @@ body {
 }
 /* Widget Styling */
 .widget {
-    background: linear-gradient(135deg, #333333, #555555); /* Dark gradient */
+    background:black; /* Dark gradient */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     width: 200px;
@@ -188,11 +196,50 @@ body {
     font-weight: bold;
 }
 
-.Datewidget{
-    background: linear-gradient(135deg, #333333, #555555); /* Dark gradient */
+.Lightwidget{
+    background:black; /* Dark gradient */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Light text color for contrast */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.Lightwidget:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+.Lightwidget h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.Lightwidget p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.baloonLight-image{
     width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.Datewidget{
+   /* background: linear-gradient(135deg, #333333, #555555);*/ /* Dark gradient */
+   background:black; /* Adds transparency */
+ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: 250px;
     height: 150px;
     display: flex;
     flex-direction: column;

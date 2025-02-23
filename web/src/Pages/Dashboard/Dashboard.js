@@ -5,6 +5,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import './dashboard.css'; // Adjust CSS path
 import LeftPane from '../../components/LeftPane/LeftPane'; // Adjust path
+import BaloonLight from '../../images/BaloonLight.webp';
 
 const socket = io('http://localhost:3000'); // Replace with your backend's URL
 
@@ -78,7 +79,7 @@ export default function Dashboard() {
       </div>
 
       <div className="mainContent">
-        
+      <div className="widgetSection">
           <h2>Weather</h2>
           <div className="TodayandHumidity">
           <div className="weatherWidget">
@@ -111,6 +112,7 @@ export default function Dashboard() {
             />
           </div>
         </div>
+        </div>
 
           
 
@@ -142,10 +144,10 @@ export default function Dashboard() {
         </div>
 
         <div className="widgetSection">
-          <h2>Date & Time</h2>
-          <div className="Datewidget">
-            <h3>Current Date</h3>
-            <p>{currentDate}</p>
+          <h2>Lighting</h2>
+          <div className="Lightwidget">
+          <img src={BaloonLight} alt="light" className="baloonLight-image" />
+            
           </div>
           
         </div>
