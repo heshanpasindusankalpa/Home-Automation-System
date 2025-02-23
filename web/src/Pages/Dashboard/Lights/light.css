@@ -10,7 +10,7 @@
   position: fixed; /* Fix the left pane */
   height: 100vh; /* Make it full height */
   overflow-y: auto; /* Allow scrolling if the content exceeds the height */
-  background-color: #f4f4f4; /* Optional: Add a background color */
+  background-color: black; /* Optional: Add a background color */
   z-index: 1; /* Ensure it stays above other content */
 }
 

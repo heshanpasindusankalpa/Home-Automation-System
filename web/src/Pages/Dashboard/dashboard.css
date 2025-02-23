@@ -129,8 +129,14 @@ body {
 .weatherWidget p {
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
+ .temperature p{
 
+  font-size: 1.5rem;
+    font-weight: bold;
+    color: aqua;
+ }
 /* Forecast Section */
 .forecastSection {
     margin-top: 30px;
