@@ -1,6 +1,6 @@
 .light-page {
   display: flex;
-  background-color: ivory;
+  background-color:black;
   height: 100vh; /* Ensure the page takes the full viewport height */
   overflow: hidden; /* Prevent the entire page from scrolling */
 }
@@ -29,7 +29,9 @@
 }
 
 .light-item {
-  background: #323131;
+  background: rgba(255, 255, 255, 0.2); /* Adds transparency */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);
   border: 1px solid #f3ebeb;
   border-radius: 10px;
   padding: 15px;

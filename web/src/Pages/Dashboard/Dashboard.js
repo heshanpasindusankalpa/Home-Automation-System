@@ -115,7 +115,7 @@ export default function Dashboard() {
         </div>
 
           
-
+        <div className="widgetSection">
           <div className="forecastSection">
             <h3>5-Day Forecast</h3>
             <div className="forecast">
@@ -127,6 +127,7 @@ export default function Dashboard() {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         
 
