@@ -37,7 +37,7 @@
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
-    background: #6efdde;
+    background: #eeee;
 }
 
 .leftPaneMenuItem:hover {
@@ -48,7 +48,7 @@
 .OverallIcon, .lightIcon, .addIcon, .CameralIcon {
     margin-right: 15px;
     font-size: 2em; /* Increased icon size */
-    color:black ; /* Soft yellow for icons */
+    color: #F96E2A; /* Soft yellow for icons */
     transition: color 0.3s ease;
 }
 
