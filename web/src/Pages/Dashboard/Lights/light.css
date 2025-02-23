@@ -10,7 +10,7 @@
   position: fixed; /* Fix the left pane */
   height: 100vh; /* Make it full height */
   overflow-y: auto; /* Allow scrolling if the content exceeds the height */
-  background-color: black; /* Optional: Add a background color */
+  background: black; /* Optional: Add a background color */
   z-index: 1; /* Ensure it stays above other content */
 }
 
@@ -32,7 +32,7 @@
   background: rgba(255, 255, 255, 0.2); /* Adds transparency */
   backdrop-filter: blur(10px); /* Apply blur effect */
     -webkit-backdrop-filter: blur(10px);
-  border: 1px solid #f3ebeb;
+ /* border: 1px solid #f3ebeb;*/
   border-radius: 10px;
   padding: 15px;
   width: 200px;
