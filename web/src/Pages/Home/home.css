@@ -41,7 +41,7 @@ body {
 }
 
 .cta-button {
-  background-color: #1C7293; /* Ensure green is the initial color */
+  background-color: #F96E2A; /* Ensure green is the initial color */
   color: rgb(246, 244, 244);
   padding: 15px 10px;
   border: none;
@@ -59,7 +59,7 @@ body {
   color: #050404;
 }
 
-/* Glowing/Lighting Effect */
+/* Glowing/Lighting Effect *//*
 .cta-button::before {
   content: '';
   position: absolute;
@@ -70,9 +70,8 @@ body {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 70%);
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.5s ease-out;
-  pointer-events: none; /* Ensures the pseudo-element doesn't interfere with clicks */
-}
-
+  pointer-events: none;*/
+  
 .cta-button:hover::before {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -82,7 +81,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 50px 20px;
-  background-color:ivory;
+  background-color:black;
   position: relative;
   z-index: -2;
 }
@@ -92,7 +91,9 @@ body {
   margin: 0 auto;
   flex: 1 1 200px;
   max-width: 250px;
-  background:#323131;
+  background: rgba(255, 255, 255, 0.2); /* Adds transparency */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 2em;
  /* transition: transform 0.3s, box-shadow 0.3s;*/
@@ -105,7 +106,7 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }*/
-
+/*
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -126,7 +127,7 @@ body {
   animation: 5s spin linear infinite;
   padding: 5px;
 
-}
+}*/
 
 .feature::before {
   filter: blur(1.5rem);
@@ -252,10 +253,10 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
   }
 }
-
+/*
 .cta-button.glow {
   animation: glow 2s infinite;
-}
+}*/
 
 /* New section for the bottom image */
 .bottom-image-section {

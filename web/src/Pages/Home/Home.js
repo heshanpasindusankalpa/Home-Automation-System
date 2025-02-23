@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'; 
 import Slider from "react-slick";
 import './home.css';
-import lightControlImage from '../../images/Light.gif';
+import lightControlImage from '../../images/BaloonLight.webp';
 import temperatureImage from '../../images/weather.gif';//temperature.jpeg
-import securityImage from '../../images/cctv.gif';
+import securityImage from '../../images/camera_on.jpg';
 import sliderImage1 from '../../images/slider1.jpg';
 import sliderImage2 from '../../images/slider2.jpg';
-import sliderImage3 from '../../images/slider3.jpg';
+import sliderImage3 from '../../images/slider4.webp';
 import bottomImage from '../../images/smarthome7.gif'; // Import the new bottom image
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
