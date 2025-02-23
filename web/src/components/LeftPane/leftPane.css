@@ -37,6 +37,7 @@
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
+    background: #6efdde;
 }
 
 .leftPaneMenuItem:hover {
@@ -47,7 +48,7 @@
 .OverallIcon, .lightIcon, .addIcon, .CameralIcon {
     margin-right: 15px;
     font-size: 2em; /* Increased icon size */
-    color: #6efdde; /* Soft yellow for icons */
+    color:black ; /* Soft yellow for icons */
     transition: color 0.3s ease;
 }
 
@@ -59,9 +60,10 @@
 }
 
 .addText, .overall, .lights, .cameras {
-    font-size: 2em; /* Increased text size */
-    font-weight: 500; /* Semi-bold for readability */
-    color: #dfe6e9; /* Light gray text */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em; /* Increased text size */
+    font-weight: 750; /* Semi-bold for readability */
+    color: black; /* Light gray text */
     transition: color 0.3s ease;
 }
 
