@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using System.Windows.Media.Animation;
 using WpfAnimatedGif;
+using System.Net.Http;
 
 namespace Home_Automation_Desktop
 {
@@ -16,7 +17,8 @@ namespace Home_Automation_Desktop
         {
             InitializeComponent();
             _context = new MongoDbContext();
-            ShowWeatherView();
+          //  ShowWeatherView();
+            LoadForecastData();
         }
 
         private async void LoadData()
@@ -114,5 +116,52 @@ namespace Home_Automation_Desktop
         {
             ShowWeatherView();
         }
+
+        private async void LoadForecastData()
+        {
+            try
+            {
+                string apiKey = "7ff3f1c7505846dce72c394d2588a9cc"; // Replace with your OpenWeatherMap API key
+                string city = "Colombo"; // Replace with your preferred city
+                string apiUrl = $"https://api.openweathermap.org/data/2.5/forecast?q={city}&units=metric&appid={apiKey}";
+
+                using (var client = new HttpClient())
+                {
+                    var response = await client.GetAsync(apiUrl);
+                    response.EnsureSuccessStatusCode();
+
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    dynamic jsonData = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString);
+
+                    var forecast = new List<ForecastItem>();
+
+                    // Extracting the 5-day forecast (3-hour interval data, take 1 per day)
+                    for (int i = 0; i < jsonData.list.Count; i += 8)
+                    {
+                        var item = jsonData.list[i];
+                        var date = DateTime.Parse((string)item.dt_txt).ToString("ddd, MMM d");
+                        var iconCode = (string)item.weather[0].icon;
+                        var temp = $"{item.main.temp}°C";
+                        var description = (string)item.weather[0].description;
+
+                        forecast.Add(new ForecastItem
+                        {
+                            Date = date,
+                            Icon = $"https://openweathermap.org/img/wn/{iconCode}@2x.png",
+                            Temp = temp,
+                            Description = description
+                        });
+                    }
+
+                    forecastList.ItemsSource = forecast;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to load weather data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
     }
 }

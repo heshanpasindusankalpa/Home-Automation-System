@@ -1,14 +1,14 @@
 ﻿<Window x:Class="Home_Automation_Desktop.Dashboard"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dashboard" Height="600" Width="1000">
+        Title="Dashboard" Height="600" Width="1000" Background="Black">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Sidebar with Buttons -->
+        <!-- Original Left Sidebar (Unmodified) -->
         <StackPanel Grid.Column="0" Background="#333333" Width="150">
             <Button Content="Dashboard" Click="Dashboard_Click" Margin="5" Background="Green"/>
             <Button Content="Lights" Click="Lights_Click" Margin="5" Background="Green" />
@@ -18,13 +18,74 @@
             <Button Content="Add" Click="Add_Click" Margin="5" Background="Green"/>
         </StackPanel>
 
-        <!-- Right Content Section -->
+        <!-- Improved Right Content Section -->
         <Grid Grid.Column="1">
-            <ContentControl x:Name="ContentSection"/>
+            <ContentControl x:Name="ContentSection">
+                <StackPanel x:Name="widgetSection" Margin="20">
+                    <!-- Background Overlay -->
+                    <Border Background="#333333" Opacity="0.7" CornerRadius="10" Margin="0,0,-10,-10">
+                        <Border.Effect>
+                            <BlurEffect Radius="8"/>
+                        </Border.Effect>
+                    </Border>
 
-            <!-- Add the missing DataGrid -->
-            <DataGrid x:Name="deviceGrid" AutoGenerateColumns="True" Visibility="Collapsed"
-                      Margin="10" />
+                    <!-- Forecast Content -->
+                    <Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="0" Margin="0,0,0,20">
+                        <StackPanel>
+                            <TextBlock Text="5-Day Forecast" FontSize="18" FontWeight="Bold" 
+                                       Foreground="White" Margin="0,0,0,10">
+                                <TextBlock.Effect>
+                                    <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="2"/>
+                                </TextBlock.Effect>
+                            </TextBlock>
+                            <ItemsControl x:Name="forecastList">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                            <TextBlock Text="{Binding Date}" Width="100" Foreground="White">
+                                                <TextBlock.Effect>
+                                                    <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
+                                                </TextBlock.Effect>
+                                            </TextBlock>
+                                            <Image Source="{Binding Icon}" Width="50" Height="50" Margin="10,0"/>
+                                            <TextBlock Text="{Binding Temp}" Foreground="White" Margin="10,0">
+                                                <TextBlock.Effect>
+                                                    <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
+                                                </TextBlock.Effect>
+                                            </TextBlock>
+                                            <TextBlock Text="{Binding Description}" Foreground="White">
+                                                <TextBlock.Effect>
+                                                    <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
+                                                </TextBlock.Effect>
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ContentControl>
+
+            <!-- Styled DataGrid -->
+            <DataGrid x:Name="deviceGrid" AutoGenerateColumns="True" Visibility="Collapsed" Margin="10"
+                      Background="#333333" Foreground="White" BorderBrush="#666666"
+                      HorizontalGridLinesBrush="#666666" VerticalGridLinesBrush="#666666"
+                      HeadersVisibility="Column" RowBackground="#444444" AlternatingRowBackground="#555555">
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#333333"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="#666666"/>
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+                <DataGrid.CellStyle>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                    </Style>
+                </DataGrid.CellStyle>
+            </DataGrid>
         </Grid>
     </Grid>
 </Window>

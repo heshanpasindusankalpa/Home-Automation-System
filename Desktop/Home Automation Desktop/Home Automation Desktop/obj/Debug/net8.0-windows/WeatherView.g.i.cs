@@ -84,7 +84,7 @@ namespace Home_Automation_Desktop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Home Automation Desktop;component/weatherview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Home Automation Desktop;V1.0.0.0;component/weatherview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WeatherView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

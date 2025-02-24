@@ -84,7 +84,7 @@ namespace Home_Automation_Desktop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Home Automation Desktop;component/loginwndow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Home Automation Desktop;V1.0.0.0;component/loginwndow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LoginWndow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
