@@ -17,7 +17,7 @@ import LeftPane from './components/LeftPane/LeftPane';
 export default function App() {
   return (
     <Router>
-      <NavBar />
+    
       
       <Routes>
         <Route path="/" element={<HomePage />} />

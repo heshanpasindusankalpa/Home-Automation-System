@@ -12,6 +12,7 @@ import sliderImage3 from '../../images/slider4.webp';
 import bottomImage from '../../images/smarthome7.gif'; // Import the new bottom image
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import NavBar from '../../components/Navigation/NavBar';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -41,6 +42,8 @@ export default function Home() {
   };
 
   return (
+    <div>
+        <NavBar/>
     <motion.div 
       className="home-container"
       initial={{ opacity: 0 }}
@@ -133,5 +136,6 @@ export default function Home() {
 
       
     </motion.div>
+    </div>
   );
 }
