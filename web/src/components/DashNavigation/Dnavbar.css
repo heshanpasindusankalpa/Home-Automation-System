@@ -1,0 +1,83 @@
+.navBarBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+
+.navBarCenter {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.navBarCenter::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.navBarLink {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.navBarLink.active {
+    background-color: #FF4500;
+    color: white;
+}
+
+.navBarLink::before,
+.navBarLink::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    background: #000;
+    z-index: -1;
+}
+
+.navBarLink::before {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navBarLink::after {
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navBarRight .addButton {
+    background-color: #FF4500;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.navBarRight .addButton:hover {
+    background-color: #e03e00;
+}

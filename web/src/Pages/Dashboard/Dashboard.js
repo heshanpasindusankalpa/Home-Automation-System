@@ -8,6 +8,8 @@ import LeftPane from '../../components/LeftPane/LeftPane'; // Adjust path
 import BaloonLight from '../../images/BaloonLight.webp';
 import Clock from 'react-clock';
 import 'react-clock/dist/Clock.css';
+import Dnavbar from '../../components/DashNavigation/Dnavbar';
+import NavBar from '../../components/Navigation/NavBar';
 
 const socket = io('http://localhost:3000'); // Replace with your backend's URL
 const API_KEY = '7ff3f1c7505846dce72c394d2588a9cc'; // Replace with your OpenWeatherMap API key
@@ -80,7 +82,14 @@ export default function Dashboard() {
   }, []);
 
   return (
+    <div>
+    <div>
+    <Dnavbar/>
+
+    </div>
     <div className="dashboard">
+ 
+      
       <div className="leftPaneContainer">
         <LeftPane />
       </div>
@@ -159,6 +168,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import ComponentForm from './ComponentForm';
 import ComponentTable from './ComponentTable';
 import LeftPane from '../../../components/LeftPane/LeftPane';
 import './Components.css';
+import Dnavbar from '../../../components/DashNavigation/Dnavbar';
 
 const Components = () => {
   const [components, setComponents] = useState([]);
@@ -53,6 +54,11 @@ const Components = () => {
   };
 
   return (
+    <div>
+    <div>
+      <Dnavbar/>
+
+    </div>
     <div className="components-page">
       <div className="leftPaneContainer4">
         <LeftPane />
@@ -79,6 +85,7 @@ const Components = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };
