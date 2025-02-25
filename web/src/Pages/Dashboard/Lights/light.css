@@ -1,6 +1,6 @@
 .light-page {
   display: flex;
-  background-color:black;
+  background:black;
   height: 100vh; /* Ensure the page takes the full viewport height */
   overflow: hidden; /* Prevent the entire page from scrolling */
 }
@@ -13,6 +13,9 @@
   background: black; /* Optional: Add a background color */
   z-index: 1; /* Ensure it stays above other content */
 }
+.light-page .leftPaneContainer2 {
+  background: black !important;
+}
 
 .main-content2 {
   width: 80%;
@@ -21,6 +24,12 @@
   height: 100vh; /* Make it full height */
   overflow-y: auto; /* Allow scrolling for the lights widgets */
 }
+
+.main-content2 h2{
+  color:#eee;
+}
+
+
 
 .components-list2 {
   display: flex;

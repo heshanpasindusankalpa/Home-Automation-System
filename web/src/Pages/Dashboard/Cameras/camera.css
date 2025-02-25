@@ -1,6 +1,6 @@
 .camera-page {
   display: flex;
-  background-color: ivory;
+  background-color:black;
   height: 100vh; /* Full viewport height */
   overflow: hidden; /* Prevent entire page scroll */
 }
@@ -10,7 +10,7 @@
   position: fixed; /* Fix left pane */
   height: 100vh; /* Full height */
   overflow-y: auto; /* Allow scrolling if content overflows */
-  background-color: #f4f4f4; /* Optional: Match Lights page style */
+  background-color: black; /* Optional: Match Lights page style */
   z-index: 1; /* Ensure left pane stays on top */
 }
 
