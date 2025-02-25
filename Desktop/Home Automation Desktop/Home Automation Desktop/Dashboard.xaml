@@ -8,7 +8,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Original Left Sidebar (Unmodified) -->
+        <!-- Original Left Sidebar -->
         <StackPanel Grid.Column="0" Background="#333333" Width="150">
             <Button Content="Dashboard" Click="Dashboard_Click" Margin="5" Background="Green"/>
             <Button Content="Lights" Click="Lights_Click" Margin="5" Background="Green" />
@@ -18,42 +18,65 @@
             <Button Content="Add" Click="Add_Click" Margin="5" Background="Green"/>
         </StackPanel>
 
-        <!-- Improved Right Content Section -->
+        <!-- Combined Weather View -->
         <Grid Grid.Column="1">
             <ContentControl x:Name="ContentSection">
                 <StackPanel x:Name="widgetSection" Margin="20">
-                    <!-- Background Overlay -->
                     <Border Background="#333333" Opacity="0.7" CornerRadius="10" Margin="0,0,-10,-10">
                         <Border.Effect>
                             <BlurEffect Radius="8"/>
                         </Border.Effect>
                     </Border>
 
-                    <!-- Forecast Content -->
-                    <Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="0" Margin="0,0,0,20">
-                        <StackPanel>
-                            <TextBlock Text="5-Day Forecast" FontSize="18" FontWeight="Bold" 
-                                       Foreground="White" Margin="0,0,0,10">
-                                <TextBlock.Effect>
-                                    <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="2"/>
-                                </TextBlock.Effect>
-                            </TextBlock>
-                            <ItemsControl x:Name="forecastList">
+                    <Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="20" Margin="0,0,0,20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Current Weather -->
+                            <StackPanel Grid.Column="0" Margin="0,0,20,0">
+                                <TextBlock Text="Current Weather" FontSize="18" FontWeight="Bold" 
+                                         Foreground="White" Margin="0,0,0,10">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="2"/>
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                                <Image x:Name="CurrentWeatherIcon" Width="100" Height="100" 
+                                       Margin="0,0,0,10" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                <TextBlock x:Name="txtTemperature" FontSize="24" Foreground="White" 
+                                           Margin="0,0,0,5" TextAlignment="Center">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                                <TextBlock x:Name="txtCondition" FontSize="16" Foreground="White" 
+                                           TextAlignment="Center" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="txtHumidity" FontSize="16" Foreground="White" 
+                                           TextAlignment="Center"/>
+                            </StackPanel>
+
+                            <!-- 5-Day Forecast -->
+                            <ItemsControl Grid.Column="1" x:Name="forecastList">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                                            <TextBlock Text="{Binding Date}" Width="100" Foreground="White">
+                                            <TextBlock Text="{Binding Date}" Width="120" Foreground="White">
                                                 <TextBlock.Effect>
                                                     <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
                                                 </TextBlock.Effect>
                                             </TextBlock>
-                                            <Image Source="{Binding Icon}" Width="50" Height="50" Margin="10,0"/>
-                                            <TextBlock Text="{Binding Temp}" Foreground="White" Margin="10,0">
+                                            <Image Source="{Binding Icon}" Width="50" Height="50" 
+                                                   Margin="10,0" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                            <TextBlock Text="{Binding Temp}" Foreground="White" Margin="10,0" 
+                                                       Width="80">
                                                 <TextBlock.Effect>
                                                     <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
                                                 </TextBlock.Effect>
                                             </TextBlock>
-                                            <TextBlock Text="{Binding Description}" Foreground="White">
+                                            <TextBlock Text="{Binding Description}" Foreground="White" 
+                                                       Width="150" TextWrapping="Wrap">
                                                 <TextBlock.Effect>
                                                     <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
                                                 </TextBlock.Effect>
@@ -62,12 +85,11 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
-                        </StackPanel>
+                        </Grid>
                     </Border>
                 </StackPanel>
             </ContentControl>
 
-            <!-- Styled DataGrid -->
             <DataGrid x:Name="deviceGrid" AutoGenerateColumns="True" Visibility="Collapsed" Margin="10"
                       Background="#333333" Foreground="White" BorderBrush="#666666"
                       HorizontalGridLinesBrush="#666666" VerticalGridLinesBrush="#666666"
