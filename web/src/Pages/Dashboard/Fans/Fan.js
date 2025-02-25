@@ -3,6 +3,7 @@ import Axios from 'axios';
 import './fans.css'; 
 import LeftPane from '../../../components/LeftPane/LeftPane';
 import FanI from '../../../images/fan2.webp';
+import Dnavbar from '../../../components/DashNavigation/Dnavbar';
 
 const Fan = () => {
   const [fans, setFans] = useState([]);
@@ -36,6 +37,10 @@ const Fan = () => {
   };
 
   return (
+    <div>
+      <div>
+        <Dnavbar/>
+      </div>
     <div className="fan-page">
       <div className="leftPaneContainer1">
         <LeftPane />
@@ -58,6 +63,7 @@ const Fan = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

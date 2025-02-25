@@ -4,6 +4,7 @@ import './camera.css'; // Change the filename if needed.
 import LeftPane from '../../../components/LeftPane/LeftPane';
 import CameraOn from '../../../images/camera_on.jpg'; // Add camera ON image
 import CameraOff from '../../../images/camera_on.jpg'; // Add camera OFF image
+import Dnavbar from '../../../components/DashNavigation/Dnavbar';
 
 const Camera = () => {
   const [cameras, setCameras] = useState([]);
@@ -37,6 +38,11 @@ const Camera = () => {
   };
 
   return (
+    <div>
+    <div>
+          <Dnavbar/>
+    
+        </div>
     <div className="camera-page">
       <div className="leftPaneContainer2">
         <LeftPane />
@@ -62,6 +68,7 @@ const Camera = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

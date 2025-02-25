@@ -4,6 +4,7 @@ import './light.css';
 import LeftPane from '../../../components/LeftPane/LeftPane';
 import LightOn from '../../../images/light_off.PNG';
 import LightOff from '../../../images/light_on.PNG';
+import Dnavbar from '../../../components/DashNavigation/Dnavbar';
 
 const Light = () => {
   const [lights, setLights] = useState([]);
@@ -37,6 +38,10 @@ const Light = () => {
   };
 
   return (
+    <div>
+      <div>
+        <Dnavbar/>
+      </div>
     <div className="light-page">
     <div className="leftPaneContainer2">
   <LeftPane />
@@ -59,6 +64,7 @@ const Light = () => {
     )}
   </div>
 </div>
+    </div>
     </div>
   );
 };
