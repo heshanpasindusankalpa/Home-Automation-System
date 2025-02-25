@@ -53,6 +53,7 @@ namespace Home_Automation_Desktop
             // Assign values to the Devices object
             Devices.Name = NameTextbox.Text;
             Devices.Type = ((ComboBoxItem)TypeComboBox.SelectedItem)?.Content.ToString();
+            Devices.Place = PlaceTextbox.Text; // Assign the Place value
             Devices.Status = ((ComboBoxItem)StatusComboBox.SelectedItem)?.Content.ToString();
 
             // Validate and assign the ComponentId (if needed)
@@ -63,6 +64,7 @@ namespace Home_Automation_Desktop
                 {
                     Name = Devices.Name,
                     Type = Devices.Type,
+                    Place = Devices.Place, // Include Place when adding
                     Status = Devices.Status,
                     ComponentId = componentId
                 });
@@ -75,8 +77,8 @@ namespace Home_Automation_Desktop
 
             // Close the dialog with success
             DialogResult = true;
-            // Close();
         }
+
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
@@ -87,11 +89,13 @@ namespace Home_Automation_Desktop
             ComponentIdTextbox.Text = device.ComponentId.ToString();
             NameTextbox.Text = device.Name;
             TypeComboBox.SelectedItem = TypeComboBox.Items.Cast<ComboBoxItem>().FirstOrDefault(item => item.Content.ToString() == device.Type);
+            PlaceTextbox.Text = device.Place; // Populate Place TextBox
             StatusComboBox.SelectedItem = StatusComboBox.Items.Cast<ComboBoxItem>().FirstOrDefault(item => item.Content.ToString() == device.Status);
 
             // Remove the existing device from the collection
             DeviceCollection.Remove(device);
         }
+
 
         private async void DeleteButton_Click(object sender, RoutedEventArgs e)
         {

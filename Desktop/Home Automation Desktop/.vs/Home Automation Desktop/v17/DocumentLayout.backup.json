@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\devices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\devices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\camerasview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\devices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\devices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\forecastitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\forecastitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\mongodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\fansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|d:\\eng\\3rd\\gui\\github\\home-automation-system\\desktop\\home automation desktop\\home automation desktop\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD280963-3E14-4A17-B05B-A7A4812BD636}|Home Automation Desktop\\Home Automation Desktop.csproj|solutionrelative:home automation desktop\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -145,7 +145,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -165,45 +165,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ForecastItem.cs",
-              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\ForecastItem.cs",
-              "RelativeDocumentMoniker": "Home Automation Desktop\\ForecastItem.cs",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\ForecastItem.cs",
-              "RelativeToolTip": "Home Automation Desktop\\ForecastItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T05:59:23.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "Home Automation Desktop\\Dashboard.xaml",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml",
-              "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-12T15:31:02.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Dashboard.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Dashboard.xaml.cs",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml.cs*",
-              "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml.cs*",
-              "ViewState": "AgIAAIgAAAAAAAAAAADwv5cAAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml.cs",
+              "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAADwv5QAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T15:31:43.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CamerasView.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\CamerasView.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\CamerasView.xaml.cs",
@@ -211,41 +186,35 @@
               "RelativeToolTip": "Home Automation Desktop\\CamerasView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAACXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T09:50:21.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T09:50:21.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Devices.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Devices.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Devices.cs",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Devices.cs",
-              "RelativeToolTip": "Home Automation Desktop\\Devices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAASAAAAAAAAAA==",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Devices.cs*",
+              "RelativeToolTip": "Home Automation Desktop\\Devices.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T16:57:00.273Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "WeatherView.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\WeatherView.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\WeatherView.xaml",
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\WeatherView.xaml",
               "RelativeToolTip": "Home Automation Desktop\\WeatherView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-11T11:15:17.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T11:15:17.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "WeatherView.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\WeatherView.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\WeatherView.xaml.cs",
@@ -253,24 +222,22 @@
               "RelativeToolTip": "Home Automation Desktop\\WeatherView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T11:15:44.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T11:15:44.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CamerasView.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\CamerasView.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\CamerasView.xaml",
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\CamerasView.xaml",
               "RelativeToolTip": "Home Automation Desktop\\CamerasView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T09:50:03.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T09:50:03.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "MongoDbContext.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\MongoDbContext.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\MongoDbContext.cs",
@@ -283,20 +250,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "AddWindow.xaml",
+              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml",
+              "RelativeDocumentMoniker": "Home Automation Desktop\\AddWindow.xaml",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml*",
+              "RelativeToolTip": "Home Automation Desktop\\AddWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-12T17:17:57.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AddWindow.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\AddWindow.xaml.cs",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml.cs",
-              "RelativeToolTip": "Home Automation Desktop\\AddWindow.xaml.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAADwvxkAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml.cs*",
+              "RelativeToolTip": "Home Automation Desktop\\AddWindow.xaml.cs*",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T17:20:12.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "Home Automation Desktop\\Dashboard.xaml",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml",
+              "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-12T15:31:02.755Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ForecastItem.cs",
+              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\ForecastItem.cs",
+              "RelativeDocumentMoniker": "Home Automation Desktop\\ForecastItem.cs",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\ForecastItem.cs",
+              "RelativeToolTip": "Home Automation Desktop\\ForecastItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T05:59:23.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MongoDb.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\MongoDb.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\MongoDb.cs",
@@ -304,12 +306,11 @@
               "RelativeToolTip": "Home Automation Desktop\\MongoDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T14:47:21.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T14:47:21.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FansView.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\FansView.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\FansView.xaml.cs",
@@ -321,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\App.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\App.xaml",
@@ -333,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "LightsView.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\LightsView.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\LightsView.xaml",
@@ -344,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Home Automation Desktop.csproj",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Home Automation Desktop.csproj",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Home Automation Desktop.csproj",
@@ -356,18 +357,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "LoginWndow.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\LoginWndow.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\LoginWndow.xaml",
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\LoginWndow.xaml",
               "RelativeToolTip": "Home Automation Desktop\\LoginWndow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-23T10:13:13.274Z"
+              "WhenOpened": "2025-01-23T10:13:13.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LightsView.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\LightsView.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\LightsView.xaml.cs",
@@ -379,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "WeatherService.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\WeatherService.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\WeatherService.cs",
@@ -391,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "camera_on.jpg",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\camera_on.jpg",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Images\\camera_on.jpg",
@@ -402,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "logo.jpg",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\logo.jpg",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Images\\logo.jpg",
@@ -413,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Window1.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Window1.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Window1.xaml",
@@ -424,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Window1.xaml.cs",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Window1.xaml.cs",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Window1.xaml.cs",
@@ -436,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Logo.gif",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\Logo.gif",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Images\\Logo.gif",
@@ -447,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "FansView.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\FansView.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\FansView.xaml",
@@ -455,17 +457,6 @@
               "RelativeToolTip": "Home Automation Desktop\\FansView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-31T16:49:00.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AddWindow.xaml",
-              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml",
-              "RelativeDocumentMoniker": "Home Automation Desktop\\AddWindow.xaml",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\AddWindow.xaml",
-              "RelativeToolTip": "Home Automation Desktop\\AddWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-12T17:17:57.995Z"
             },
             {
               "$type": "Document",
@@ -567,6 +558,10 @@
               "RelativeToolTip": "Home Automation Desktop\\Images\\temperature.jpeg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-01-12T15:38:25.814Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",

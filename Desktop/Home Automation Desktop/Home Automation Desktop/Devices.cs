@@ -17,6 +17,9 @@ public class Devices
     [BsonElement("type")]
     public string Type { get; set; } // Matches the 'type' field in MongoDB
 
+    [BsonElement("place")]
+    public string Place { get; set; } // Matches the 'type' field in MongoDB
+
     [BsonElement("status")]
     public string Status { get; set; } // Matches the 'status' field in MongoDB
     public string ImagePath { get; set; }
