@@ -5,6 +5,7 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
   const [id, setId] = useState('');
   const [name, setName] = useState('');
   const [type, setType] = useState('');
+  const [place, setPlace] = useState('');
   const [status, setStatus] = useState('off');
 
   useEffect(() => {
@@ -12,17 +13,19 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
       setId(data.id);
       setName(data.name);
       setType(data.type);
+      setPlace(data.place); // Added for 'place'
       setStatus(data.status);
     }
   }, [data]);
 
   const handleSubmit = () => {
-    if (id && name && type) {
-      const payload = { id, name, type, status };
+    if (id && name && type && place) {
+      const payload = { id, name, type, place, status };
       isEdit ? updateComponent(payload) : addComponent(payload);
       setId('');
       setName('');
       setType('');
+      setPlace(''); // Reset place
       setStatus('off');
     } else {
       alert('Please fill out all fields.');
@@ -51,11 +54,17 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
         <option value="camera">Camera</option>
         <option value="other">Other</option>
       </select>
+      <input
+        type="text"
+        placeholder="Place"
+        value={place}
+        onChange={(e) => setPlace(e.target.value)}
+      />
       <select value={status} onChange={(e) => setStatus(e.target.value)}>
         <option value="off">Off</option>
         <option value="on">On</option>
       </select>
-      <button className= "button2 " onClick={handleSubmit}>{isEdit ? 'Update' : 'Add'}</button>
+      <button className="button2" onClick={handleSubmit}>{isEdit ? 'Update' : 'Add'}</button>
     </div>
   );
 };

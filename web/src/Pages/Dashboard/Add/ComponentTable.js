@@ -8,6 +8,7 @@ const ComponentTable = ({ rows, selectComponent, deleteComponent }) => {
         <tr>
           <th>Name</th>
           <th>Type</th>
+          <th>Place</th>
           <th>Status</th>
           <th>Actions</th>
         </tr>
@@ -18,6 +19,7 @@ const ComponentTable = ({ rows, selectComponent, deleteComponent }) => {
             <tr key={index}>
               <td>{row.name}</td>
               <td>{row.type}</td>
+              <td>{row.place}</td>
               <td>{row.status}</td>
               <td>
                 <button className="EditB" onClick={() => selectComponent(row)}>Edit</button>
@@ -27,7 +29,7 @@ const ComponentTable = ({ rows, selectComponent, deleteComponent }) => {
           ))
         ) : (
           <tr>
-            <td colSpan="4">No components found</td>
+            <td colSpan="5">No components found</td>
           </tr>
         )}
       </tbody>

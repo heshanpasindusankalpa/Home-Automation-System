@@ -14,7 +14,7 @@ thead {
 th, td {
   padding: 12px 15px;
   border: 1px solid #383d39;
-  color:white;
+  color: white;
 }
 
 tr:nth-child(even) {
@@ -29,7 +29,7 @@ tr:hover {
   background-color: #323131;
 }
 
-.EditB,.DeleteB {
+.EditB, .DeleteB {
   padding: 5px 10px;
   margin-right: 5px;
   border: none;
@@ -38,16 +38,16 @@ tr:hover {
   cursor: pointer;
 }
 
-.EditB,.DeleteB:hover {
-  opacity: 0.8;
-}
-
 .EditB {
-  background-color: #eee; /* Edit button - Blue */
+  background-color: #eee;
   color: #272932;
 }
 
 .DeleteB {
-  background-color:#F96E2A; /* Delete button - Red */
+  background-color: #F96E2A;
   color: #F1F2EB;
+}
+
+.EditB:hover, .DeleteB:hover {
+  opacity: 0.8;
 }
