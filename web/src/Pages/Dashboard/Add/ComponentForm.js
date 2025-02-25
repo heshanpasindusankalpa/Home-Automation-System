@@ -54,6 +54,7 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
         <option value="camera">Camera</option>
         <option value="other">Other</option>
       </select>
+     
       <input
         type="text"
         placeholder="Place"
