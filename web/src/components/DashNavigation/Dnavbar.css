@@ -24,7 +24,7 @@
 .navBarLink {
     position: relative;
     padding: 10px 20px;
-    color: white;
+    color: #F96E2A;
     text-decoration: none;
     font-size: 1.1em;
     background-color: transparent;
@@ -81,4 +81,9 @@
 
 .navBarRight .addButton:hover {
     background-color: #e03e00;
+}
+.Nlogo{
+    font-size:2.5rem;
+    font-weight:100;
+    color: #eee;
 }
