@@ -29,7 +29,7 @@ input, select {
   border: none;
   border-radius: 5px;
   color: rgb(235, 244, 245);
-  background-color: rgb(6, 88, 97);
+  background-color: #45a049;
   font-size: 18px;
   cursor: pointer;
 }
