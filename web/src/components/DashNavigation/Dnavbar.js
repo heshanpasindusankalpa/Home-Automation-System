@@ -18,7 +18,7 @@ export default function Dnavbar() {
   return (
     <div className='navBarBox'>
       <div className='navBarLeft'>
-        <span className='Nlogo'>Wel Come To SmartHome </span>
+        <span className='Nlogo'></span>
       </div>
       
       <div className='navBarCenter'>
