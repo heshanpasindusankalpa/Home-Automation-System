@@ -74,9 +74,9 @@
   color: white;
 }
 
-.light-item button {
+.light-page .light-item button {
   padding: 10px 15px;
-  background-color: #1C7293;
+  background-color: #F96E2A;
   color: white;
   border: none;
   border-radius: 5px;
