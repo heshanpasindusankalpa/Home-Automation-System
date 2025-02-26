@@ -24,7 +24,8 @@ const Light = () => {
 
   const toggleLight = (id, currentStatus) => {
     const newStatus = currentStatus === 'on' ? 'off' : 'on';
-    Axios.put(`http://localhost:3001/api/components/${id}`, { status: newStatus })
+    Axios.put('http://localhost:3001/api/updatecomponent', { id, status: newStatus })
+
       .then(() => {
         setLights((prevLights) => 
           prevLights.map((light) =>
@@ -54,9 +55,14 @@ const Light = () => {
         <div key={light.id} className="light-item">
           <img src={light.status === 'on' ? LightOn : LightOff} alt={light.name} />
           <p>{light.name}</p>
-          <button onClick={() => toggleLight(light.id, light.status)}>
-            Turn {light.status === 'on' ? 'Off' : 'On'}
-          </button>
+          <button 
+  onClick={() => toggleLight(light.id, light.status)}
+  className={light.status === 'on' ? 'btn-on' : 'btn-off'}
+>
+  {light.status === 'on' ? 'Off' : 'On'}
+</button>
+
+          
         </div>
       ))
     ) : (
