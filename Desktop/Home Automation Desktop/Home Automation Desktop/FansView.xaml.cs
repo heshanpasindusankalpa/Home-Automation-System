@@ -18,6 +18,13 @@ namespace Home_Automation_Desktop
         private async void LoadFans()
         {
             var fans = await _context.Devices.Find(d => d.Type == "fan").ToListAsync();
+            
+
+
+            foreach (var fan in fans)
+            {
+                fan.ImagePath = fan.Status == "on" ? "pack://application:,,,/Images/fan.png" : "pack://application:,,,/Images/light_off.png";
+            }
             FansList.ItemsSource = fans;
         }
 

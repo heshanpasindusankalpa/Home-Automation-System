@@ -180,3 +180,4 @@ D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Hom
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\App.baml
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.baml
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan.png

@@ -1,24 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PersonIcon from '@mui/icons-material/Person';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import SettingsIcon from '@mui/icons-material/Settings';
+import Logo from '../../images/0107.png';
 import './Dnavbar.css';
-export default function Dnavbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // Change to false for guest view
-  const [showModal, setShowModal] = useState(false);
-  const [newTabName, setNewTabName] = useState('');
-  const [navTabs, setNavTabs] = useState(['Kitchen', 'Living Room', 'Bedroom']);
 
-  const handleAddTab = () => {
-    if (newTabName) {
-      setNavTabs([...navTabs, newTabName]);
-      setNewTabName('');
-      setShowModal(false);
-    }
-  };
+export default function Dnavbar() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true); 
+  const [navTabs, setNavTabs] = useState(['Kitchen', 'Living Room', 'Bedroom']);
 
   return (
     <div className='navBarBox'>
       <div className='navBarLeft'>
-        <span className='Nlogo'></span>
+        
+        <Link to="/" className='navBarLink'>Home</Link>
       </div>
       
       <div className='navBarCenter'>
@@ -40,26 +36,13 @@ export default function Dnavbar() {
       
       {isLoggedIn && (
         <div className='navBarRight'>
-          <button className='addButton' onClick={() => setShowModal(true)}>Add</button>
-        </div>
-      )}
-
-      {showModal && (
-        <div className='modal'>
-          <div className='modalContent'>
-            <h3>Add New Tab</h3>
-            <input 
-              type='text' 
-              value={newTabName} 
-              onChange={(e) => setNewTabName(e.target.value)} 
-              placeholder='New tab name' 
-            />
-            <button onClick={handleAddTab}>Add Tab</button>
-            <button onClick={() => setShowModal(false)}>Cancel</button>
+          <div className='navBarIcons'>
+            <div className='navBarIcon'><PersonIcon/></div>
+            <div className='navBarIcon'><ContactPhoneIcon/></div>
+            <div className='navBarIcon'><SettingsIcon/></div>
           </div>
         </div>
       )}
     </div>
   );
 }
-

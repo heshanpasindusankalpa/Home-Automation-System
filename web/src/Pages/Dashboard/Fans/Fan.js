@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './fans.css'; 
 import LeftPane from '../../../components/LeftPane/LeftPane';
-import FanI from '../../../images/fan2.webp';
+import Fanon from '../../../images/fan_on.gif';
+import Fanoff from '../../../images/fan_off.png';
 import Dnavbar from '../../../components/DashNavigation/Dnavbar';
 
 const Fan = () => {
@@ -23,7 +24,7 @@ const Fan = () => {
 
   const toggleFan = (id, currentStatus) => {
     const newStatus = currentStatus === 'on' ? 'off' : 'on';
-    Axios.put(`http://localhost:3001/api/components/${id}`, { status: newStatus })
+    Axios.put('http://localhost:3001/api/updatecomponent', { id, status: newStatus })
       .then(() => {
         setFans((prevFans) => 
           prevFans.map((fan) =>
@@ -41,29 +42,35 @@ const Fan = () => {
       <div>
         <Dnavbar/>
       </div>
-    <div className="fan-page">
-      <div className="leftPaneContainer1">
-        <LeftPane />
-      </div>
-      <div className="main-content1">
-        <h2>Fans</h2>
-        <div className="components-list">
-          {fans.length > 0 ? (
-            fans.map((fan) => (
-              <div key={fan.id} className="fan-item">
-                <img src={FanI} alt={fan.name} />
-                <p>{fan.name}</p>
-                <button onClick={() => toggleFan(fan.id, fan.status)}>
-                  Turn {fan.status === 'on' ? 'Off' : 'On'}
-                </button>
-              </div>
-            ))
-          ) : (
-            <p>No fans found</p>
-          )}
+      <div className="fan-page">
+        <div className="leftPaneContainer1">
+          <LeftPane />
+        </div>
+        <div className="main-content1">
+          <h2>Fans</h2>
+          <div className="components-list">
+            {fans.length > 0 ? (
+              fans.map((fan) => (
+                <div key={fan.id} className="fan-item">
+                  <img 
+                    src={fan.status === 'on' ? Fanon : Fanoff} 
+                    alt={fan.name} 
+                  />
+                  <p>{fan.name}</p>
+                  <button 
+                    onClick={() => toggleFan(fan.id, fan.status)}
+                    className={fan.status === 'on' ? 'btn-off' : 'btn-on'}
+                  >
+                    {fan.status === 'on' ? 'Off' : 'On'}
+                  </button>
+                </div>
+              ))
+            ) : (
+              <p>No fans found</p>
+            )}
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

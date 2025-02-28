@@ -62,6 +62,7 @@ const Components = () => {
         rows={components}
         selectComponent={(data) => {
           setSelectedComponent(data);
+          
           setIsEdit(true);
         }}
         deleteComponent={(id) =>

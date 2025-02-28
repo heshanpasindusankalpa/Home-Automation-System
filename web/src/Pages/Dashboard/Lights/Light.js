@@ -53,11 +53,11 @@ const Light = () => {
     {lights.length > 0 ? (
       lights.map((light) => (
         <div key={light.id} className="light-item">
-          <img src={light.status === 'on' ? LightOn : LightOff} alt={light.name} />
+          <img src={light.status === 'off' ? LightOn : LightOff} alt={light.name} />
           <p>{light.name}</p>
           <button 
   onClick={() => toggleLight(light.id, light.status)}
-  className={light.status === 'on' ? 'btn-on' : 'btn-off'}
+  className={light.status === 'on' ? 'btn-off' : 'btn-on'}
 >
   {light.status === 'on' ? 'Off' : 'On'}
 </button>
