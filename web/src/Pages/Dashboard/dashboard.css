@@ -139,7 +139,7 @@ body {
  }
 /* Forecast Section */
 .forecastSection {
-    margin-top: 30px;
+    margin-top: 5px;
     color: #EEEEEE;
 }
 
@@ -195,7 +195,7 @@ body {
 .widget h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color:black;
+    color:#eee;
 }
 
 .widget p {
@@ -203,42 +203,88 @@ body {
     font-weight: bold;
 }
 
-.Lightwidget{
-    background:black; /* Dark gradient */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+/* dashboard.css */
+.Lightwidget {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: black;
     border-radius: 15px;
-    width: 250px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff; /* Light text color for contrast */
-    text-align: center;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-
-.Lightwidget:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-.Lightwidget h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color:black;
-}
-
-.Lightwidget p {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.baloonLight-image{
-    width: 200px;
-    height: 200px;
+  }
+  
+  .Lightwidget:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .light-status-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .status-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .baloonLight-image {
+    width: 100%;
+    height: 100%;
+    display: block;
     border-radius: 15px;
-}
+  }
+  .vertical-progress-container {
+    width: 30px;
+    height: 150px;
+    background-color: #d6d6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .vertical-progress-bar {
+    width: 100%;
+    background-color: #F96E2A;
+    transition: height 0.5s ease;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  
+  /* Glow effect based on light percentage */
+  .Lightwidget::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 215, 0, 0.2) 0%,
+      rgba(255, 215, 0, 0) 70%
+    );
+    opacity: calc(var(--light-opacity, 0) * 0.5);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .lightand{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
 
 .Datewidget{
    /* background: linear-gradient(135deg, #333333, #555555);*/ /* Dark gradient */

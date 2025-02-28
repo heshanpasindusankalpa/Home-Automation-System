@@ -156,18 +156,6 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "fan.png",
-              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\fan.png",
-              "RelativeDocumentMoniker": "Home Automation Desktop\\Images\\fan.png",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\fan.png",
-              "RelativeToolTip": "Home Automation Desktop\\Images\\fan.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-27T15:55:31.816Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
@@ -178,6 +166,17 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fan.png",
+              "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\fan.png",
+              "RelativeDocumentMoniker": "Home Automation Desktop\\Images\\fan.png",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Images\\fan.png",
+              "RelativeToolTip": "Home Automation Desktop\\Images\\fan.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-27T15:55:31.816Z"
             },
             {
               "$type": "Document",
@@ -246,8 +245,7 @@
               "RelativeToolTip": "Home Automation Desktop\\AddWindow.xaml.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAgwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T17:20:12.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T17:20:12.69Z"
             },
             {
               "$type": "Document",
@@ -258,8 +256,7 @@
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\FansView.xaml",
               "RelativeToolTip": "Home Automation Desktop\\FansView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T16:49:00.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T16:49:00.823Z"
             },
             {
               "$type": "Document",
@@ -284,8 +281,7 @@
               "RelativeToolTip": "Home Automation Desktop\\LightsView.xaml.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T16:51:33.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T16:51:33.437Z"
             },
             {
               "$type": "Document",
@@ -367,8 +363,7 @@
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\App.xaml",
               "RelativeToolTip": "Home Automation Desktop\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-12T19:01:09.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T19:01:09.515Z"
             },
             {
               "$type": "Document",

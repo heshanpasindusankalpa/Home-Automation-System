@@ -11,35 +11,34 @@ export default function Dnavbar() {
   const [navTabs, setNavTabs] = useState(['Kitchen', 'Living Room', 'Bedroom']);
 
   return (
-    <div className='navBarBox'>
-      <div className='navBarLeft'>
-        
-        <Link to="/" className='navBarLink'>Home</Link>
+    <div className='DnavBarBox'>
+      <div className='DnavBarLeft'>
+        <Link to="/" className='DnavBarHome'>Home</Link>
       </div>
       
-      <div className='navBarCenter'>
+      <div className='DnavBarCenter'>
         {isLoggedIn ? (
-          <div className='navBarLinks'>
+          <div className='DnavBarLinks'>
             {navTabs.map((tab, index) => (
-              <Link to={`/${tab.toLowerCase()}`} className='navBarLink' key={index}>
+              <Link to={`/${tab.toLowerCase()}`} className='DnavBarLink' key={index}>
                 {tab}
               </Link>
             ))}
           </div>
         ) : (
-          <div className='navBarLinks'>
-            <Link to="/" className='navBarLink'>HomePage</Link>
-            <Link to="/about" className='navBarLink'>About</Link>
+          <div className='DnavBarLinks'>
+            <Link to="/" className='DnavBarLink'>HomePage</Link>
+            <Link to="/about" className='DnavBarLink'>About</Link>
           </div>
         )}
       </div>
       
       {isLoggedIn && (
-        <div className='navBarRight'>
-          <div className='navBarIcons'>
-            <div className='navBarIcon'><PersonIcon/></div>
-            <div className='navBarIcon'><ContactPhoneIcon/></div>
-            <div className='navBarIcon'><SettingsIcon/></div>
+        <div className='DnavBarRight'>
+          <div className='DnavBarIcons'>
+            <div className='DnavBarIcon'><PersonIcon/></div>
+            <div className='DnavBarIcon'><ContactPhoneIcon/></div>
+            <div className='DnavBarIcon'><SettingsIcon/></div>
           </div>
         </div>
       )}

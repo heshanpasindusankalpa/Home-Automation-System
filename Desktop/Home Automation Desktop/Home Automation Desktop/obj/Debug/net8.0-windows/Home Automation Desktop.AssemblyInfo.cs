@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Home Automation Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03d6e6555b1d319bda676fc150f01eac4147ec6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77eb5bcb74a768891585b4aaf789ff98d95f3a48")]
 [assembly: System.Reflection.AssemblyProductAttribute("Home Automation Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Home Automation Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
