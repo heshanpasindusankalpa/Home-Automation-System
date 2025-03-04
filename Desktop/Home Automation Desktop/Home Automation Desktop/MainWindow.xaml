@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Home_Automation_Desktop"
         mc:Ignorable="d"
-        Title="Login" Height="600" Width="800" AllowsTransparency="True"
+        Title="Login" Height="620" Width="800" AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Background="White">
+        Background="Black">
     <Border CornerRadius="20" BorderBrush="#D6D6D6" BorderThickness="2">
         <Grid Margin="-2,8,0,-8" HorizontalAlignment="Left" Width="800">
             <Grid.ColumnDefinitions>
@@ -16,27 +16,24 @@
                 <ColumnDefinition Width="599*"/>
             </Grid.ColumnDefinitions>
             <!-- Background Image -->
-            <Image Source="Images/slider2.jpg" HorizontalAlignment="Left" Width="1046" Height="606" VerticalAlignment="Top" Margin="0,-10,0,0" Grid.ColumnSpan="2"/>
+            <Image Source="Images/home.jpg" HorizontalAlignment="Left" Width="780" Height="356" VerticalAlignment="Top" Grid.ColumnSpan="2" RenderTransformOrigin="0.326,0.495" Margin="10,0,0,0"/>
 
             <!-- Loading Animation -->
             <Grid x:Name="LoadingOverlay" Background="#80000000" Visibility="Collapsed" Grid.ColumnSpan="2">
-                <Ellipse Width="100" Height="100" Fill="Transparent" Stroke="#065861" StrokeThickness="10">
+                <Ellipse Width="100" Height="100" Fill="Transparent" Stroke="Orange" StrokeThickness="10">
                     <Ellipse.RenderTransform>
                         <RotateTransform x:Name="LoadingSpinner" CenterX="50" CenterY="50" />
                     </Ellipse.RenderTransform>
                 </Ellipse>
-                <TextBlock Text="Loading..." Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Bottom" Margin="0,120,0,0" TextAlignment="Center" />
+                <TextBlock Text="Loading..." Foreground="Orange" FontSize="20" FontWeight="Bold" VerticalAlignment="Bottom" Margin="0,120,0,10" TextAlignment="Center" />
             </Grid>
 
             <!-- Get Started Button -->
-            <Button Content="Get Started" HorizontalAlignment="Left" Height="82" Margin="72,480,0,0" 
-                    VerticalAlignment="Top" Width="254" Background="#065861" Foreground="#F6F4F4"
-                    FontSize="35" FontWeight="Bold" Cursor="Hand" BorderBrush="Black" BorderThickness="3"
-                    Click="GetStartedButton_Click" Grid.Column="1">
+            <Button Click=" GetStartedButton_Click" Margin="72,430,273,84" Grid.Column="1">
                 <Button.Style>
                     <Style TargetType="Button">
-                        <Setter Property="Background" Value="#065861"/>
-                        <Setter Property="Foreground" Value="#F6F4F4"/>
+                        <Setter Property="Background" Value="#F96E2A"/>
+                        <Setter Property="Foreground" Value="Black"/>
                         <Setter Property="Padding" Value="15,10"/>
                         <Setter Property="FontSize" Value="35"/>
                         <Setter Property="FontWeight" Value="Bold"/>
@@ -44,25 +41,34 @@
                         <Setter Property="Cursor" Value="Hand"/>
                         <Setter Property="Width" Value="254"/>
                         <Setter Property="Height" Value="82"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#E5F1ED"/>
-                                <Setter Property="Foreground" Value="#050404"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="Background" Value="#eee"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
                 </Button.Style>
+                <TextBlock Text="Get Started" Foreground="Black"/>
             </Button>
-            <Rectangle HorizontalAlignment="Left" Height="90" Margin="-4,-16,0,0" Stroke="Black" VerticalAlignment="Top" Width="806" RenderTransformOrigin="0.93,-0.386" Grid.ColumnSpan="2" Fill="Black">
-                <Rectangle.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleY="-0.899"/>
-                        <RotateTransform/>
-                        <TranslateTransform Y="-1.459"/>
-                    </TransformGroup>
-                </Rectangle.RenderTransform>
-            </Rectangle>
+
+
+
+            <TextBlock HorizontalAlignment="Left" Margin="101,298,0,0" TextWrapping="Wrap" Text="Welcome to Smart Home Automation" VerticalAlignment="Top" Height="75" Width="649" RenderTransformOrigin="0.331,0.425" FontSize="35" Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" />
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="18,357,0,0" TextWrapping="Wrap" Text="Control your home devices with ease and efficiency." VerticalAlignment="Top" Width="362" FontSize="20" Foreground="White"/>
         </Grid>
     </Border>
 </Window>

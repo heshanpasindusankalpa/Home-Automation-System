@@ -181,3 +181,10 @@ D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Hom
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.baml
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.g.cs
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan_off.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\home.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\baloonLight.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan_on.gif
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\DeviceView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\DeviceView.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Style\UIColors.baml

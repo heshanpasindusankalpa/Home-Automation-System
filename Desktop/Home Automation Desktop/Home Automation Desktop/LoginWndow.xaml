@@ -10,10 +10,10 @@
         Background="Black">
 
     <Grid>
-        <!-- Background Image -->
+        <!-- Background Image 
         <Grid.Background>
             <ImageBrush ImageSource="Images/slider2.jpg" Stretch="UniformToFill"/>
-        </Grid.Background>
+        </Grid.Background> -->
 
         <!-- Blurred Background Box -->
         <Border Width="300"
@@ -27,7 +27,7 @@
         </Border>
 
         <!-- Login Box (No Blur Applied Here) -->
-        <Border Background="#33FFFFFF"
+        <Border Background="#444444" Opacity="0.9"
                 CornerRadius="10"
                 Padding="20"
                 Width="300"
@@ -88,7 +88,7 @@
                 <Button x:Name="LoginButton"
                         Content="Login"
                         Click="LoginButton_Click"
-                        Background="#1C7293"
+                        Background="#F96E2A"
                         Foreground="White"
                         FontSize="16"
                         Padding="10"

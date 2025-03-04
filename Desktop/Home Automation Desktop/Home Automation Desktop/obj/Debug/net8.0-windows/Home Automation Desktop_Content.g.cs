@@ -8,8 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/baloonlight.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/camera_on.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fan.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fan_off.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fan_on.gif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/home.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/light_off.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/light_on.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo.gif")]

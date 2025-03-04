@@ -60,7 +60,7 @@ namespace Home_Automation_Desktop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Home Automation Desktop;V1.0.0.0;component/lightsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Home Automation Desktop;component/lightsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LightsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

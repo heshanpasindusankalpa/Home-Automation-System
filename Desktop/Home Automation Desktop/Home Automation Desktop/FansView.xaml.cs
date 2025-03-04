@@ -23,7 +23,7 @@ namespace Home_Automation_Desktop
 
             foreach (var fan in fans)
             {
-                fan.ImagePath = fan.Status == "on" ? "pack://application:,,,/Images/fan.png" : "pack://application:,,,/Images/light_off.png";
+                fan.ImagePath = fan.Status == "on" ? "pack://application:,,,/Images/fan_on.gif" : "pack://application:,,,/Images/fan_off.png";
             }
             FansList.ItemsSource = fans;
         }

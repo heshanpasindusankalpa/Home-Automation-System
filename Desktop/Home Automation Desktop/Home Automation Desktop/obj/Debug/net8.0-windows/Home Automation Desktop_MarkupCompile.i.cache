@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\App.xaml
-963780035
-7253395345
-19-344315213
+112085431319
+111225500930
+20-697377184
 227-937827881
-AddWindow.xaml;CamerasView.xaml;Dashboard.xaml;FansView.xaml;LightsView.xaml;LoginWndow.xaml;MainWindow.xaml;WeatherView.xaml;Window1.xaml;
+AddWindow.xaml;CamerasView.xaml;Dashboard.xaml;DeviceView.xaml;FansView.xaml;LightsView.xaml;LoginWndow.xaml;MainWindow.xaml;Style\UIColors.xaml;WeatherView.xaml;Window1.xaml;
 
-False
+True
 

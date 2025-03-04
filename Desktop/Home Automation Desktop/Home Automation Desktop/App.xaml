@@ -6,7 +6,7 @@
     <Application.Resources>
 
 
-        <Style TargetType="TextBlock">
+       <!--- <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="White" />
             <Setter Property="FontFamily" Value="Segoe UI" />
         </Style>
@@ -15,8 +15,17 @@
             <Setter Property="Background" Value="#1C1C1C" />
             <Setter Property="Margin" Value="10" />
            
-        </Style>
+        </Style> -->
+        
 
-
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style/UIColors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+        
+        
     </Application.Resources>
 </Application>

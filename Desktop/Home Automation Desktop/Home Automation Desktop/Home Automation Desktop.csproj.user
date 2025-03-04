@@ -16,6 +16,9 @@
     <Compile Update="Dashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DeviceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="FansView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,6 +45,9 @@
     <Page Update="Dashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="DeviceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="FansView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -52,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\UIColors.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WeatherView.xaml">
