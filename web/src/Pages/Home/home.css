@@ -313,6 +313,8 @@ body {
   animation: moveText 5s infinite ease-in-out; /* Apply the animation */
 }
 
+
+
 /* Optional: Add animation to the text */
 @keyframes moveText {
   0% {

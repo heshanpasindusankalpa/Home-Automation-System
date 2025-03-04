@@ -22,10 +22,10 @@ exports.addComponent = async (req, res) => {
     }
 
     // Check if the component already exists
-    const existingComponent = await Component.findOne({ id });
-    if (existingComponent) {
-      return res.status(409).json({ error: 'Component with this ID already exists' });
-    }
+    //const existingComponent = await Component.findOne({ id });
+   // if (existingComponent) {
+    //  return res.status(409).json({ error: 'Component with this ID already exists' });
+   // }
 
     // Save new component
     const newComponent = new Component({ id, name, type, place, status });

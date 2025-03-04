@@ -4,6 +4,9 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   background: #f9f9f9;
+  background: rgba(255, 255, 255, 0.8); /* Adds transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+      -webkit-backdrop-filter: blur(10px); 
   max-width: 50%;
 }
 
@@ -13,8 +16,18 @@ h1 {
   text-align: center;
 }
 
-input, select {
+input {
   width: calc(100% - 45px);
+  padding: 10px;
+  margin: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+ select {
+  width: calc(100% - 20px);
   padding: 10px;
   margin: 10px 12px;
   border: 1px solid #ccc;
