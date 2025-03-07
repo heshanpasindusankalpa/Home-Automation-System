@@ -35,6 +35,11 @@ const Other = () => {
       });
   };
 
+  const generateImageUrl = (componentName) => {
+    // Example API call to an AI image generator
+    return `https://api.dalle.ai/generate?prompt=${encodeURIComponent(componentName)}`;
+  };
+
   return (
     <div>
       <Dnavbar />
@@ -48,6 +53,11 @@ const Other = () => {
             {components.length > 0 ? (
               components.map((component) => (
                 <div key={component.id} className="component-item">
+                  <img 
+                    src={generateImageUrl(component.name)} 
+                    alt={component.name} 
+                    className="component-image" 
+                  />
                   <p>{component.name}</p>
                   <button 
                     onClick={() => toggleComponent(component.id, component.status)}
