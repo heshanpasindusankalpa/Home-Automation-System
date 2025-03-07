@@ -10,6 +10,7 @@ import Light from './Pages/Dashboard/Lights/Light';
 import Fan from './Pages/Dashboard/Fans/Fan';
 import Camera from './Pages/Dashboard/Cameras/Camera';
 import LeftPane from './components/LeftPane/LeftPane';
+import Other from './Pages/Dashboard/Other/Other';
 
 
 
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/Lights" element={<Light/>}/>
         <Route path="/Fan" element={<Fan/>}/>
         <Route path="/camera" element={<Camera/>}/>     
+        <Route path="/other" element={<Other/>}/>    
        
         
       </Routes>

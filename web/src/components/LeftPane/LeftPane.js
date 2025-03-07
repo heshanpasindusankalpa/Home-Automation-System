@@ -36,7 +36,8 @@ export default function LeftPane() {
           </div>
           <div className='leftPaneMenuItem'>
             <GridViewIcon className='OverallIcon' />
-            <span className='overall'>Other Devices</span>
+            <span className='other'onClick={() => navigate('/other')}>Other Devices</span>
+            
           </div>
         </div>
       </div>

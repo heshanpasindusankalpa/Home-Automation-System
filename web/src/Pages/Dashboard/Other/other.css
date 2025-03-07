@@ -1,0 +1,84 @@
+.other-page {
+    display: flex;
+    background: black;
+    height: 100vh; 
+    overflow: hidden; 
+  }
+  
+  .Other .leftPaneContainer {
+    width: 20%;
+    position: fixed; 
+    height: 100vh;
+    overflow-y: auto;
+    background: black;
+    z-index: 1; 
+  }
+  
+  .other-page .leftPaneContainer {
+    background: black !important;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 20px;
+    margin-left: 20%;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .main-content h2 {
+    color: #eee;
+  }
+  
+  .components-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .component-item {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .component-item:hover {
+    background: #3e3e3e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .component-item p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .component-item button {
+    padding: 10px 15px;
+    background-color: #F96E2A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .component-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-on {
+    background-color: green;
+  }
+  
+  .btn-off {
+    background-color: red;
+  }
+  

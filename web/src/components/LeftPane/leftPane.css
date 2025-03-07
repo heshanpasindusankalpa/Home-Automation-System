@@ -59,7 +59,7 @@
     color: rgb(6, 88, 97); /* Light blue on hover */
 }
 
-.addText, .overall, .lights, .cameras {
+.addText, .other, .lights, .cameras,.overall {
     font-family: 'Arial', sans-serif;
     font-size: 1.5em; /* Increased text size */
     font-weight: 750; /* Semi-bold for readability */
