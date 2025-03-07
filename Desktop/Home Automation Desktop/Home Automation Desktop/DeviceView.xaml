@@ -5,15 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Home_Automation_Desktop"
         mc:Ignorable="d"
-         Height="450" Width="800">
+        Height="450" Width="800"
+        Loaded="UserControl_Loaded">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical">
-                <TextBlock Text="Devices" FontSize="30" FontWeight="Bold" Margin="10"/>
-                <Button Content="Open Devices" Width="150" Height="30" Margin="10" Click="OpenDevices_Click"/>
+                <TextBlock Text="Devices" FontSize="30" FontWeight="Bold" Margin="10,10,10,20"/>
+                <DataGrid x:Name="deviceGrid" AutoGenerateColumns="False" Height="300"
+                          HeadersVisibility="Column" GridLinesVisibility="None"
+                          FontSize="14" Background="#FFF0F0F0" RowBackground="White"
+                          AlternatingRowBackground="#F5F5F5" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Device Name" Binding="{Binding Name}" Width="200" FontWeight="SemiBold"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
+                        <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="150"/>
+                        <DataGridTextColumn Header="Location" Binding="{Binding Location}" Width="150"/>
+                    </DataGrid.Columns>
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="#FF0078D4"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.RowStyle>
+                        <Style TargetType="{x:Type DataGridRow}">
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGrid.RowStyle>
+                </DataGrid>
 
-                <!-- DataGrid to display devices -->
-                <DataGrid Name="deviceGrid" AutoGenerateColumns="True" Height="300" Margin="10"/>
+                <!-- Styled DataGrid with manual columns -->
             </StackPanel>
         </ScrollViewer>
     </Grid>

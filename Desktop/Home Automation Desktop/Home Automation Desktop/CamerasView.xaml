@@ -22,7 +22,7 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <!-- Widget Design -->
-                                <Border Background="Black" BorderBrush="#f3ebeb" BorderThickness="1" CornerRadius="10" Padding="10" Margin="5" Width="200" Height="250">
+                                <Border Background="#323131" BorderThickness="1" CornerRadius="10" Padding="10" Margin="5" Width="200" Height="250">
                                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                                         <Image Source="{Binding ImagePath}" Width="100" Height="100" Margin="5"/>
                                         <TextBlock Text="{Binding Name}" FontSize="14" Margin="5" TextAlignment="Center" Foreground="White"/>

@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
+using System.Windows.Media;
+using System.Windows.Shapes;
+using System.Globalization;
+using System.Windows.Data;
+
 
 namespace Home_Automation_Desktop
 {
@@ -30,7 +35,19 @@ namespace Home_Automation_Desktop
             {
                 _humidity = Math.Round(value);
                 OnPropertyChanged(nameof(Humidity));
+                UpdateHumidityArc(_humidity);
             }
+        }
+        
+        private void UpdateHumidityArc(double percentage)
+        {
+            double angle = (percentage / 100) * 270; // Convert 100% to a 270° arc
+            double radians = (angle - 90) * (Math.PI / 180);
+            double x = 75 + 65 * Math.Cos(radians);
+            double y = 75 + 65 * Math.Sin(radians);
+
+            // Create Arc Path
+            HumidityArc.Data = Geometry.Parse($"M 75,10 A 65,65 0 {(percentage > 50 ? 1 : 0)} 1 {x},{y}");
         }
 
         public double Temperature
@@ -145,18 +162,20 @@ namespace Home_Automation_Desktop
             await LoadWeatherData(); // Refresh data
         }
 
-        private async Task<int> GetLightPercentage()
+        public async Task<int> GetLightPercentage()
         {
             try
             {
-                var lights = await _context.Devices.Find(d => d.Type == "Light").ToListAsync();
+                // Corrected "Light" to "light" in the query
+                var lights = await _context.Devices.Find(d => d.Type == "light").ToListAsync();
                 if (lights.Count == 0)
                 {
                     Console.WriteLine("No light devices found.");
                     return 0;
                 }
 
-                int onLights = lights.Count(d => d.Status == "On");
+                // Corrected "On" to "on" in the status check
+                int onLights = lights.Count(d => d.Status == "on");
                 Console.WriteLine($"Total lights: {lights.Count}, Lights on: {onLights}");
 
                 return (onLights * 100) / lights.Count;
@@ -168,7 +187,6 @@ namespace Home_Automation_Desktop
                 return 0;
             }
         }
-
 
         protected void OnPropertyChanged(string propertyName)
         {

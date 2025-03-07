@@ -1,27 +1,47 @@
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.csproj.AssemblyReference.cache
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\AddWindow.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\CamerasView.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\FansView.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LightsView.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LoginWndow.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Style\UIColors.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\AddWindow.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\CamerasView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\DeviceView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\FansView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LightsView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LoginWndow.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Window1.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\App.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_Content.g.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_MarkupCompile.cache
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_MarkupCompile.lref
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\0107.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\backgroundlight.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\backgroundlight1.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\baloonLight.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\camera_on.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan_off.png
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan_on.gif
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\home.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\light_off.PNG
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\light_on.PNG
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\Logo.gif
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\slider2.jpg
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\slider3.jpg
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Home Automation Desktop.exe
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Home Automation Desktop.deps.json
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Home Automation Desktop.runtimeconfig.json
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Home Automation Desktop.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Home Automation Desktop.pdb
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Dashboard.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\App.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_MarkupCompile.cache
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_MarkupCompile.lref
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Dashboard.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\MainWindow.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.g.resources
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.GeneratedMSBuildEditorConfig.editorconfig
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.AssemblyInfoInputs.cache
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.AssemblyInfo.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.csproj.CoreCompileInputs.cache
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.sourcelink.json
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\refint\Home Automation Desktop.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.pdb
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.genruntimeconfig.cache
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\ref\Home Automation Desktop.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\DnsClient.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Humanizer.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.Build.Locator.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
@@ -46,7 +66,15 @@ D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Hom
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MongoDB.Bson.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MongoDB.Driver.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Newtonsoft.Json.Bson.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Newtonsoft.Json.Schema.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\SharpCompress.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Snappier.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -59,6 +87,8 @@ D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Hom
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\WpfAnimatedGif.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\ZstdSharp.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
@@ -146,45 +176,21 @@ D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Hom
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.csproj.AssemblyReference.cache
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Aut.A0D5CE25.Up2Date
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\AddWindow.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\AddWindow.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\DnsClient.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MongoDB.Bson.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\MongoDB.Driver.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\SharpCompress.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Snappier.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\ZstdSharp.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\slider3.jpg
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop_Content.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\slider2.jpg
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LoginWndow.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LoginWndow.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Window1.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Window1.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\FansView.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LightsView.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\FansView.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\LightsView.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\WpfAnimatedGif.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\Logo.gif
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\CamerasView.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\CamerasView.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\camera_on.jpg
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\light_off.PNG
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\light_on.PNG
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Newtonsoft.Json.Bson.dll
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Newtonsoft.Json.Schema.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Dashboard.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Dashboard.g.cs
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\App.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\WeatherView.g.cs
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan.png
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan_off.png
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\home.jpg
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\baloonLight.png
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\bin\Debug\net8.0-windows\Images\fan_on.gif
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\DeviceView.g.cs
 D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\DeviceView.baml
-D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Style\UIColors.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\MainWindow.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Window1.baml
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.g.resources
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.GeneratedMSBuildEditorConfig.editorconfig
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.AssemblyInfoInputs.cache
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.AssemblyInfo.cs
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.csproj.CoreCompileInputs.cache
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.sourcelink.json
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Aut.A0D5CE25.Up2Date
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\refint\Home Automation Desktop.dll
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.pdb
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\Home Automation Desktop.genruntimeconfig.cache
+D:\eng\3rd\GUI\GitHub\Home-Automation-System\Desktop\Home Automation Desktop\Home Automation Desktop\obj\Debug\net8.0-windows\ref\Home Automation Desktop.dll
