@@ -32,5 +32,10 @@ namespace Home_Automation_Desktop
                 MessageBox.Show($"Error loading devices: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void deviceGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

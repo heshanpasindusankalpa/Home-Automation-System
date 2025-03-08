@@ -17,7 +17,7 @@
                 </Grid.RowDefinitions>
 
                 <!-- Header -->
-                <Border Background="#556A7F" CornerRadius="20,20,0,0" Grid.Row="0" Grid.ColumnSpan="2">
+                <Border Background="Black" CornerRadius="20,20,0,0" Grid.Row="0" Grid.ColumnSpan="2">
                     <DockPanel LastChildFill="True">
                         <TextBlock Text="Add New Device" FontSize="20" FontWeight="Bold" 
                                    Foreground="White" VerticalAlignment="Center" Margin="10" />
@@ -57,8 +57,8 @@
 
 
                 <!-- Component Table -->
-                <Border Grid.Row="1" Grid.Column="1" Margin="20" Background="#3E454D" CornerRadius="10">
-                    <DataGrid x:Name="addWindowComponentTable" AutoGenerateColumns="False" Background="#3E454D" Foreground="Black">
+                <Border Grid.Row="1" Grid.Column="1" Margin="20" Background="Black" CornerRadius="10">
+                    <DataGrid x:Name="addWindowComponentTable" AutoGenerateColumns="False" Background="Black" Foreground="Black">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Component ID" Binding="{Binding ComponentId}" Width="*" />
                             <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*" />

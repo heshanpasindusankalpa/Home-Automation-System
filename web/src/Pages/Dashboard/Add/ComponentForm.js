@@ -55,12 +55,16 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
         <option value="other">Other</option>
       </select>
      
-      <input
-        type="text"
-        placeholder="Place"
-        value={place}
-        onChange={(e) => setPlace(e.target.value)}
-      />
+      <select value={place} onChange={(e) => setPlace(e.target.value)}>
+        <option value="" disabled>Select Place</option>
+        <option value="Kitchen">Kitchen</option>
+        <option value="Living Room">Living Room</option>
+        <option value="Bed Room">Bed Room</option>
+        <option value="Room1">Room1</option>
+        <option value="Room2">Room2</option>
+        <option value="Room3">Room3</option>
+        <option value="Room4">Room4</option>
+      </select>
       <select value={status} onChange={(e) => setStatus(e.target.value)}>
         <option value="off">Off</option>
         <option value="on">On</option>

@@ -70,14 +70,35 @@ namespace Home_Automation_Desktop
             }
         }
 
-       
+
 
         public Dashboard()
         {
             InitializeComponent();
-            DataContext = this; // Set the data context for binding
+            DataContext = this;
             _context = new MongoDbContext();
-            Loaded += async (s, e) => await LoadWeatherData();
+            Loaded += async (s, e) =>
+            {
+                SetGreetingAndDate();
+                await LoadWeatherData();
+            };
+        }
+
+        private void SetGreetingAndDate()
+        {
+            // Set Date
+            txtDate.Text = DateTime.Now.ToString("MMM dd, yyyy");
+
+            // Set Greeting based on time
+            int hour = DateTime.Now.Hour;
+            if (hour >= 5 && hour < 12)
+                txtGreeting.Text = "Good Morning!";
+            else if (hour >= 12 && hour < 17)
+                txtGreeting.Text = "Good Afternoon!";
+            else if (hour >= 17 && hour < 21)
+                txtGreeting.Text = "Good Evening!";
+            else
+                txtGreeting.Text = "Good Night!";
         }
 
         private async Task LoadWeatherData()

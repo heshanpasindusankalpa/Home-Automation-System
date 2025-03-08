@@ -97,6 +97,20 @@
         <Grid Grid.Column="1" Grid.ColumnSpan="2">
             <ContentControl x:Name="ContentSection">
                 <StackPanel x:Name="widgetSection" Margin="20">
+                    <Grid HorizontalAlignment="Stretch" Margin="20,10">
+                        <!-- Greeting on the Top Left -->
+                        <TextBlock x:Name="txtGreeting" 
+                   FontSize="22" 
+                   FontWeight="Bold" 
+                   Foreground="White"
+                   HorizontalAlignment="Left"/>
+
+                        <!-- Date on the Top Right -->
+                        <TextBlock x:Name="txtDate" 
+                   FontSize="18" 
+                   Foreground="White"
+                   HorizontalAlignment="Right"/>
+                    </Grid>
 
                     <!-- Current Weather -->
                     <!-- Current Weather -->
