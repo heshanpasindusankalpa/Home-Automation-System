@@ -12,7 +12,8 @@ import Camera from './Pages/Dashboard/Cameras/Camera';
 import LeftPane from './components/LeftPane/LeftPane';
 import Other from './Pages/Dashboard/Other/Other';
 
-import Place from './Pages/Dashboard/Place/Place';
+
+import Kitchen from './Pages/Dashboard/Place/Kitchen';
 
 
 
@@ -31,7 +32,7 @@ export default function App() {
         <Route path="/Fan" element={<Fan/>}/>
         <Route path="/camera" element={<Camera/>}/>     
         <Route path="/other" element={<Other/>}/>  
-        <Route path="/place" element={<Place/>}/>     
+        <Route path="/place" element={<Kitchen/>}/>     
     
       </Routes>
     </Router>

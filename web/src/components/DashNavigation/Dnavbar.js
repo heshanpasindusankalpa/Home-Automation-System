@@ -16,35 +16,17 @@ export default function Dnavbar() {
     <div className='DnavBarBox'>
       <div className='DnavBarLeft'>
         <Link to="Dashboard/Place/place" className='DnavBarHome'>Home</Link>
-        <span className='DnavBarHome' onClick={() => navigate('/place')}>Place</span>
+        
       </div>
-      
+
       <div className='DnavBarCenter'>
-        {isLoggedIn ? (
-          <div className='DnavBarLinks'>
-            {navTabs.map((tab, index) => (
-              <Link to={`/${tab.toLowerCase()}`} className='DnavBarLink' key={index}>
-                {tab}
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <div className='DnavBarLinks'>
-            <Link to="/" className='DnavBarLink'>HomePage</Link>
-           
-          </div>
-        )}
+        
+        <span className='DnavBarHome' onClick={() => navigate('/place')}>Kitchen</span>
       </div>
+
       
-      {isLoggedIn && (
-        <div className='DnavBarRight'>
-          <div className='DnavBarIcons'>
-            <div className='DnavBarIcon'><PersonIcon/></div>
-            <div className='DnavBarIcon'><ContactPhoneIcon/></div>
-            <div className='DnavBarIcon'><SettingsIcon/></div>
-          </div>
-        </div>
-      )}
+      
+    
     </div>
   );
 }
