@@ -12,7 +12,7 @@ import Camera from './Pages/Dashboard/Cameras/Camera';
 import LeftPane from './components/LeftPane/LeftPane';
 import Other from './Pages/Dashboard/Other/Other';
 
-import Place from './Pages/Place/Place';
+import Place from './Pages/Dashboard/Place/Place';
 
 
 

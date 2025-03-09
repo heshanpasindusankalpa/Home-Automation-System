@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import PersonIcon from '@mui/icons-material/Person';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Logo from '../../images/0107.png';
 import './Dnavbar.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Dnavbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(true); 
   const [navTabs, setNavTabs] = useState(['Kitchen', 'Living Room', 'Bedroom']);
+   const navigate = useNavigate();
 
   return (
     <div className='DnavBarBox'>
       <div className='DnavBarLeft'>
-        <Link to="/" className='DnavBarHome'>Home</Link>
+        <Link to="Dashboard/Place/place" className='DnavBarHome'>Home</Link>
+        <span className='DnavBarHome' onClick={() => navigate('/place')}>Place</span>
       </div>
       
       <div className='DnavBarCenter'>
@@ -28,7 +31,7 @@ export default function Dnavbar() {
         ) : (
           <div className='DnavBarLinks'>
             <Link to="/" className='DnavBarLink'>HomePage</Link>
-            <Link to="/about" className='DnavBarLink'>About</Link>
+           
           </div>
         )}
       </div>
