@@ -1,9 +1,11 @@
 import React from 'react';
 import './about.css';
+import NavBar from '../../components/Navigation/NavBar';
 
 export default function About() {
   return (
     <div className="about-container">
+      <NavBar />
       <div className="about-header">
         <h1>About Home Automation</h1>
         <p>Making your home smarter and your life easier!</p>
