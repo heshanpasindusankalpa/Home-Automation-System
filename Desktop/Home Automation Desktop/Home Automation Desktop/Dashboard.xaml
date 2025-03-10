@@ -7,7 +7,7 @@
         Title="Dashboard" Height="800" Width="1200" Background="Black">
     <Window.Resources>
         <!-- Button Style for Navigation -->
-       <!--
+        <!--
         <local:PercentageConverter x:Key="PercentageConverter"/> -->
         <Style x:Key="NavButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#DDDDDD"/>
@@ -61,9 +61,9 @@
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="Foreground" Value="White"/>
         </Style>
-        
+
     </Window.Resources>
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="120*" />
@@ -108,34 +108,34 @@
                         <!-- Date on the Top Right -->
                         <TextBlock x:Name="txtDate" 
                    FontSize="18" 
-                   Foreground="White"
+                   Foreground="Green"
                    HorizontalAlignment="Right"/>
                     </Grid>
 
                     <!-- Current Weather -->
                     <!-- Current Weather -->
-<Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="20" Margin="0,0,0,20">
-    <Grid>
-        <Border Background="Black" Width="250" HorizontalAlignment="Left" CornerRadius="10">
-            <StackPanel Background="Black" Height="207" VerticalAlignment="Top">
-                <TextBlock Text="Current Weather" FontSize="18" FontWeight="Bold" Foreground="White" Margin="0,0,0,10">
-                    <TextBlock.Effect>
-                        <DropShadowEffect Color="White" Opacity="0.8" ShadowDepth="2"/>
-                    </TextBlock.Effect>
-                </TextBlock>
-                <Image x:Name="imgCurrentWeather" Width="100" Height="100" Margin="0,0,0,10" RenderOptions.BitmapScalingMode="HighQuality"/>
-                <TextBlock x:Name="txtTemperature" FontSize="24" Foreground="White" Margin="0,0,0,5" TextAlignment="Center">
-                    <TextBlock.Effect>
-                        <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
-                    </TextBlock.Effect>
-                </TextBlock>
-                <TextBlock x:Name="txtCondition" FontSize="16" Foreground="White" TextAlignment="Center" Margin="0,0,0,5"/>
-            </StackPanel>
-        </Border>
+                    <Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="20" Margin="0,0,0,20" Height="283">
+                        <Grid>
+                            <Border Background="Black" Width="250" HorizontalAlignment="Left" CornerRadius="10">
+                                <StackPanel Background="Black" Height="207" VerticalAlignment="Top">
+                                    <TextBlock Text="Current Weather" FontSize="18" FontWeight="Bold" Foreground="White" Margin="0,0,0,10">
+                                        <TextBlock.Effect>
+                                            <DropShadowEffect Color="White" Opacity="0.8" ShadowDepth="2"/>
+                                        </TextBlock.Effect>
+                                    </TextBlock>
+                                    <Image x:Name="imgCurrentWeather" Width="100" Height="100" Margin="0,0,0,10" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    <TextBlock x:Name="txtTemperature" FontSize="24" Foreground="White" Margin="0,0,0,5" TextAlignment="Center">
+                                        <TextBlock.Effect>
+                                            <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="1"/>
+                                        </TextBlock.Effect>
+                                    </TextBlock>
+                                    <TextBlock x:Name="txtCondition" FontSize="16" Foreground="White" TextAlignment="Center" Margin="0,0,0,5"/>
+                                </StackPanel>
+                            </Border>
 
-        <!-- Humidity Section -->
-        <Border Background="Black" Width="250" HorizontalAlignment="Center" CornerRadius="10" Margin="298,0,349,0">
-            <StackPanel Background="Black" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <!-- Humidity Section -->
+                            <Border Background="Black" Width="250" HorizontalAlignment="Center" CornerRadius="10" Margin="298,0,349,0">
+                                <StackPanel Background="Black" VerticalAlignment="Center" HorizontalAlignment="Center">
                                     <TextBlock Text="Humidity" FontSize="20" FontWeight="Bold" 
                        HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
 
@@ -150,9 +150,9 @@
                        FontSize="28" FontWeight="Bold"/>
 
                                 </StackPanel>
-        </Border>
-    </Grid>
-</Border>
+                            </Border>
+                        </Grid>
+                    </Border>
 
 
 
@@ -160,7 +160,7 @@
                     <!-- 5-Day Forecast -->
 
                     <!-- 5-Day Forecast and Lighting Section -->
-                    <Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="20" Margin="0,0,0,10">
+                    <Border Background="#444444" Opacity="0.9" CornerRadius="10" Padding="20" Margin="0,0,0,10" Height="297">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
@@ -202,22 +202,36 @@
                             <!-- Lighting Section -->
                             <Border Grid.Column="1" Background="#444444" Opacity="0.9" CornerRadius="10" Padding="5">
                                 <Border Background="Black" Width="250" CornerRadius="10">
-                                    <StackPanel Background="Black" Orientation="Horizontal" VerticalAlignment="Center">
+                                    <StackPanel Background="Black" Orientation="Horizontal" VerticalAlignment="Center" Height="227">
                                         <StackPanel Margin="10,0">
                                             <TextBlock Text="Lighting" FontSize="18" FontWeight="Bold" Foreground="White" Margin="0,0,0,10">
                                                 <TextBlock.Effect>
                                                     <DropShadowEffect Color="Black" Opacity="0.8" ShadowDepth="2"/>
                                                 </TextBlock.Effect>
                                             </TextBlock>
-                                            <Image Width="104" Height="100" 
+                                            <Image Width="233" Height="122" 
                RenderOptions.BitmapScalingMode="HighQuality"
                Source="/Images/baloonLight.png" RenderTransformOrigin="-0.157,0.57"/>
+                                            <TextBlock x:Name="txtLightPercentage"
+                       Text="{Binding LightPercentage, StringFormat='Lights On: {0}%'}"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0,10,0,0"
+                       HorizontalAlignment="Center"/>
                                         </StackPanel>
 
                                         <!-- Vertical Percentage Bar -->
-                                        <Grid Width="30" Height="100" Margin="10,25,10,0">
+                                        <Grid Width="54" Height="100" Margin="10,25,10,0" RenderTransformOrigin="0.5,0.5">
+                                            <Grid.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform ScaleX="-1"/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Grid.RenderTransform>
                                             <!-- Background track -->
-                                            <Border Background="#404040" CornerRadius="3"/>
 
                                             <!-- Progress fill 
                                             <Rectangle VerticalAlignment="Bottom" Height="{Binding lightPercentage,Converter={StaticResource PercentageConverter}}" Margin="1">
@@ -233,20 +247,11 @@
                                             </Rectangle>-->
 
                                             <!-- Percentage text -->
-                                            <TextBlock x:Name="txtLightPercentage"
-                   Text="{Binding LightPercentage, StringFormat='{}{0}%'}"
-                   FontSize="14"
-                   FontWeight="Bold"
-                   Foreground="White"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   RenderTransformOrigin="0.5,0.5">
-                                                <TextBlock.RenderTransform>
-                                                    <RotateTransform Angle="-90"/>
-                                                </TextBlock.RenderTransform>
-                                            </TextBlock>
+                                           
                                         </Grid>
+                                       
                                     </StackPanel>
+                                    
                                 </Border>
                             </Border>
                         </Grid>
@@ -256,7 +261,7 @@
 
 
                     <!-- Light Percentage -->
-                  
+
                 </StackPanel>
             </ContentControl>
 

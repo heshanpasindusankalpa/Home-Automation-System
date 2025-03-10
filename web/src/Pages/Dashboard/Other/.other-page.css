@@ -1,0 +1,82 @@
+.other-page {
+    display: flex;
+    background: black;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.other-page .leftPaneContainer {
+    width: 20%;
+    position: fixed; 
+    height: 100vh;
+    overflow-y: auto;
+    background: black;
+    z-index: 1; 
+}
+
+.other-page .main-content {
+    width: 80%;
+    padding: 20px;
+    margin-left: 20%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.other-page .main-content h2 {
+    color: #eee;
+}
+
+.other-page .components-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.other-page .component-item {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.other-page.component-item:hover {
+    background: #3e3e3e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.other-page.component-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.other-page.component-item p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.other-page.component-item button {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-on {
+    background-color: green;
+}
+
+.btn-off {
+    background-color: red;
+}
