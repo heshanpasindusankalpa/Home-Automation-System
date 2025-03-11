@@ -60,10 +60,8 @@ const ComponentForm = ({ addComponent, updateComponent, data, isEdit }) => {
         <option value="Kitchen">Kitchen</option>
         <option value="Living Room">Living Room</option>
         <option value="Bed Room">Bed Room</option>
-        <option value="Room1">Room1</option>
-        <option value="Room2">Room2</option>
-        <option value="Room3">Room3</option>
-        <option value="Room4">Room4</option>
+        <option value="Bath Room">Bath Room</option>
+       
       </select>
       <select value={status} onChange={(e) => setStatus(e.target.value)}>
         <option value="off">Off</option>

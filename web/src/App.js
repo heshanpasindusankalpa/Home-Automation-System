@@ -14,6 +14,10 @@ import Other from './Pages/Dashboard/Other/Other';
 
 
 import Kitchen from './Pages/Dashboard/Place/Kitchen';
+import { Bathroom } from '@mui/icons-material';
+import BedRoom from './Pages/Dashboard/Place/Bed Room/BedRoom';
+import BathRoom from './Pages/Dashboard/Place/BathRoom/BathRoom';
+import LivingRoom from './Pages/Dashboard/Place/LivingRoom/LivingRoom';
 
 
 
@@ -32,7 +36,10 @@ export default function App() {
         <Route path="/Fan" element={<Fan/>}/>
         <Route path="/camera" element={<Camera/>}/>     
         <Route path="/other" element={<Other/>}/>  
-        <Route path="/place" element={<Kitchen/>}/>     
+        <Route path="/kitchen" element={<Kitchen/>}/>     
+        <Route path="/bed" element={<BedRoom/>}/>  
+        <Route path="/bath" element={<BathRoom/>}/>  
+        <Route path="/living" element={<LivingRoom/>}/>  
     
       </Routes>
     </Router>

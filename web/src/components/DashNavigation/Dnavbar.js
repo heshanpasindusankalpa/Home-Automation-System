@@ -15,13 +15,17 @@ export default function Dnavbar() {
   return (
     <div className='DnavBarBox'>
       <div className='DnavBarLeft'>
-        <Link to="Dashboard/Place/place" className='DnavBarHome'>Home</Link>
+      <span className='DnavBarHome' onClick={() => navigate('/')}>Home</span>
+      <span className='DnavBarHome' onClick={() => navigate('/dashboard')}>Dash Board</span>
         
       </div>
 
       <div className='DnavBarCenter'>
         
-        <span className='DnavBarHome' onClick={() => navigate('/place')}>Kitchen</span>
+        <span className='DnavBarHome' onClick={() => navigate('/living')}>Living Room</span>
+        <span className='DnavBarHome' onClick={() => navigate('/kitchen')}>Kitchen</span>
+        <span className='DnavBarHome' onClick={() => navigate('/bath')}>Bath Room</span>
+        <span className='DnavBarHome' onClick={() => navigate('/bed')}>Bed Room</span>
       </div>
 
       
