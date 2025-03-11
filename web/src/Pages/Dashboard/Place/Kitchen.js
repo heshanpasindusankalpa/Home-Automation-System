@@ -108,19 +108,19 @@ const Kitchen = () => {
           </div>
 
           <div className="category">
-            <h3>Other Devices</h3>
-            <div className="components-list">
-              {kitchen.filter((item) => !['light', 'fan', 'camera'].includes(item.type)).map((item) => (
-                <div key={item.id} className="item">
-                  <img src={getComponentImage(item.type, item.status)} alt={item.name} />
-                  <p>{item.name}</p>
-                  <button onClick={() => toggleKitchenComponent(item.id, item.status)}>
-                    {item.status === 'on' ? 'Off' : 'On'}
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
+  <h3>Other Devices</h3>
+  <div className="components-list">
+    {kitchen.filter((item) => !['light', 'fan', 'camera'].includes(item.type)).map((item) => (
+      <div key={item.id} className="item">
+        <p>{item.name}</p>
+        <button onClick={() => toggleKitchenComponent(item.id, item.status)}>
+          {item.status === 'on' ? 'Off' : 'On'}
+        </button>
+      </div>
+    ))}
+  </div>
+</div>
+
         </div>
       </div>
     </div>
