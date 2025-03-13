@@ -65,6 +65,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
+.widgetSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #08ad0d; /* Light text color for contrast */
+}
 .TodayandHumidity
 {
     display: flex;
