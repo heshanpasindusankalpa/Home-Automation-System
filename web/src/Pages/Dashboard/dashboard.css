@@ -32,7 +32,9 @@ body {
    
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
-
+.description p{
+    color:#F96E2A;
+}
 /* Right Pane */
 .rightPane {
     grid-area: rightPane;
