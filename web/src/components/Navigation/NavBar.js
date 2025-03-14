@@ -22,11 +22,7 @@ export default function NavBar() {
           <Link to="/" className='navBarLink'>HomePage</Link>
           <Link to="/about" className='navBarLink'>About</Link>
         </div>
-        <div className='navBarIcons'>
-          <div className='navBarIcon'><PersonIcon/></div>
-          <div className='navBarIcon'><ContactPhoneIcon/></div>
-          <div className='navBarIcon'><SettingsIcon/></div>
-        </div>
+        
       </div>
     </div>
   );
