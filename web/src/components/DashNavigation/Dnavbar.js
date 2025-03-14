@@ -1,36 +1,25 @@
-import React, { useState } from 'react';
-
-import PersonIcon from '@mui/icons-material/Person';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import SettingsIcon from '@mui/icons-material/Settings';
-import Logo from '../../images/0107.png';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Dnavbar.css';
-import { Link, useNavigate } from 'react-router-dom';
 
 export default function Dnavbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true); 
-  const [navTabs, setNavTabs] = useState(['Kitchen', 'Living Room', 'Bedroom']);
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
-    <div className='DnavBarBox'>
-      <div className='DnavBarLeft'>
-      <span className='DnavBarHome' onClick={() => navigate('/')}>Home</span>
-      <span className='DnavBarHome' onClick={() => navigate('/dashboard')}>Dash Board</span>
-        
+    <div className="DnavBarBox">
+      {/* Left Section */}
+      <div className="DnavBarLeft">
+        <span className="DnavBarHome" onClick={() => navigate('/')}>Home</span>
+        <span className="DnavBarHome" onClick={() => navigate('/dashboard')}>Dashboard</span>
       </div>
 
-      <div className='DnavBarCenter'>
-        
-        <span className='DnavBarHome' onClick={() => navigate('/living')}>Living Room</span>
-        <span className='DnavBarHome' onClick={() => navigate('/kitchen')}>Kitchen</span>
-        <span className='DnavBarHome' onClick={() => navigate('/bath')}>Bath Room</span>
-        <span className='DnavBarHome' onClick={() => navigate('/bed')}>Bed Room</span>
+      {/* Center Section */}
+      <div className="DnavBarCenter">
+        <span className="DnavBarHome" onClick={() => navigate('/living')}>Living Room</span>
+        <span className="DnavBarHome" onClick={() => navigate('/kitchen')}>Kitchen</span>
+        <span className="DnavBarHome" onClick={() => navigate('/bath')}>Bathroom</span>
+        <span className="DnavBarHome" onClick={() => navigate('/bed')}>Bedroom</span>
       </div>
-
-      
-      
-    
     </div>
   );
 }
