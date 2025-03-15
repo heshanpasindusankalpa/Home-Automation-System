@@ -5,7 +5,7 @@
     background:rgba(0, 0, 0, 0.2); /* A deeper green to represent sustainability and automation 
     backdrop-filter: blur(10px); /* Apply blur effect 
     -webkit-backdrop-filter: blur(10px); */
-    background-color: #181717;
+    background-color: black;
     display: flex;
     align-items: center;
     position: sticky;
@@ -59,8 +59,8 @@
  
  .navBarLink {
     margin-left: 15px;
-    font-size: 18px;
-    color: white;
+    font-size: 20px;
+    color: #F96E2A;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
