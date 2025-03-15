@@ -13,10 +13,10 @@ import bottomImage from '../../images/smarthome7.gif';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from '../../components/Navigation/NavBar';
-import fb from '../../images/fb.png';
-import twitter from '../../images/twitter.png';
-import linkedin from '../../images/linkedin.png';
-import inst from '../../images/inst.png';
+import fb from '../../images/fb3.webp';
+import twitter from '../../images/twit2.webp';
+import linkedin from '../../images/link.webp';
+import inst from '../../images/inst.webp';
 import { Link } from 'react-router-dom';
 
 export default function Home() {

@@ -5,7 +5,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import SettingsIcon from '@mui/icons-material/Settings';
 import "./navBar.css";
-import Logo from '../../images/0310.png';
+import Logo from '../../images/03102.png';
 
 
 export default function NavBar() {
