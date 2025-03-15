@@ -160,7 +160,7 @@ body {
 
 .feature p {
   font-size: 1rem;
-  color: #070707;
+  color: #eeee;
 }
 
 .home-container {
@@ -432,12 +432,12 @@ hr {
 /* Optional: Add animation to the text */
 @keyframes moveText {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(-20%);
   }
   50% {
-    transform: translateX(10%);
+    transform: translateX(-10%);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-20%);
   }
 }
