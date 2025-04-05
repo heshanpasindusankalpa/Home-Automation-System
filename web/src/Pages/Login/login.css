@@ -1,122 +1,127 @@
-/*General Styling */
-/* Add a background image */
+/* login.css */
 .login-container {
-  
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
- /* background: url('../../images/smarthome5.webp') no-repeat center center fixed; */
-  background-color:#272932 ;
-  background-size: cover; /* Ensures the image covers the entire screen */
-  /*display: flex;*/
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  width: 90%;
+  max-width: 650px;
+  margin: 2rem auto;
+  background-color: #272932;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Optionally, add a semi-transparent effect to the login box */
+.image-section {
+  flex: 1;
+  width: 100px;
+  overflow: hidden;
+}
 
-/* Login Container 
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.image-section img {
   width: 100%;
   height: 100%;
-}*/
+  object-fit: cover;
+}
 
-/* Login Box */
-.login-box {
-  background: rgba(255, 255, 255, 0.2); /* Adds transparency */
-  backdrop-filter: blur(10px); /* Apply blur effect */
-    -webkit-backdrop-filter: blur(10px); 
+.form-section {
+  flex: 1;
+  min-width: 400px;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
   text-align: center;
-  width: 30%;
-  height: 60%;
-  margin-top: 4%;
-  position: relative;
+  margin: 20px;
 }
 
-
-
-/* Heading */
 .login-box h2 {
-  font-size: 3rem;
-  color: #0e0d0d;
+  font-size: 2rem;
+  color: #eee;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
-/* Form Styling */
+.icons {
+  margin-bottom: 1rem;
+}
+
+.LoginIcon {
+  font-size: 3rem !important;
+  color: #0b0b0b;
+}
+
 form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 label {
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #080808;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
 }
 
 input {
   padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  outline: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 
-input:focus {
-  border-color: #007BFF;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
-}
-
-/* Button Styling */
 .loginB {
   padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #F96E2A;/*#1C7293*/
-  color:black;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background-color: #F96E2A;
 }
 
-.loginB:hover {
-  background-color: #eeee;
-}
-
-/* Signup Text */
 .signup-text {
   margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 0.85rem;
 }
 
-.signup-text a {
-  color: #007BFF;
-  text-decoration: none;
-  transition: color 0.3s ease;
+/* Responsive Design */
+@media (max-width: 650px) {
+  .login-container {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+
+  .image-section {
+    height: 200px;
+  }
+
+  .form-section {
+    padding: 1.5rem;
+  }
+
+  .login-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 }
 
-.signup-text a:hover {
-  color: #0056b3;
-}
-.LoginIcon
-{
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Align vertically */
-  margin: 0 auto 0rem; /* Add spacing below the icon */
-  font-size: 2rem; /* Make the icon large */
-  color: #0b0b0b; /* Match the icon color to the theme */
-margin-top: 0;
-    
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+    border-radius: 10px;
+  }
+  
+  .form-section {
+    padding: 1rem;
+  }
+
+  input {
+    padding: 0.7rem;
+  }
+
+  .loginB {
+    padding: 0.7rem;
+  }
 }
