@@ -181,7 +181,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -200,6 +200,18 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Dashboard.xaml.cs",
@@ -209,8 +221,7 @@
               "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAswHMAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T15:31:43.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T15:31:43.104Z"
             },
             {
               "$type": "Document",
@@ -218,8 +229,8 @@
               "Title": "Dashboard.xaml",
               "DocumentMoniker": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml",
               "RelativeDocumentMoniker": "Home Automation Desktop\\Dashboard.xaml",
-              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml*",
-              "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml*",
+              "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\Dashboard.xaml",
+              "RelativeToolTip": "Home Automation Desktop\\Dashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-12T15:31:02.755Z",
               "EditorCaption": ""
@@ -233,8 +244,7 @@
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\DeviceView.xaml",
               "RelativeToolTip": "Home Automation Desktop\\DeviceView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-03T06:42:09.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T06:42:09.614Z"
             },
             {
               "$type": "Document",
@@ -279,8 +289,7 @@
               "ToolTip": "D:\\eng\\3rd\\GUI\\GitHub\\Home-Automation-System\\Desktop\\Home Automation Desktop\\Home Automation Desktop\\LoginWndow.xaml",
               "RelativeToolTip": "Home Automation Desktop\\LoginWndow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-23T10:13:13.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T10:13:13.274Z"
             },
             {
               "$type": "Document",
@@ -292,8 +301,7 @@
               "RelativeToolTip": "Home Automation Desktop\\LoginWndow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T10:14:47.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T10:14:47.011Z"
             },
             {
               "$type": "Document",
@@ -305,8 +313,7 @@
               "RelativeToolTip": "Home Automation Desktop\\CamerasView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T09:50:21.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T09:50:21.612Z"
             },
             {
               "$type": "Document",
@@ -696,18 +703,6 @@
               "RelativeToolTip": "Home Automation Desktop\\Images\\temperature.jpeg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-01-12T15:38:25.814Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
