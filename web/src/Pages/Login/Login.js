@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import loginImage from '../../images/slider2.jpg';
 
 export default function Login() {
   // Hard-coded admin credentials
@@ -27,6 +28,9 @@ export default function Login() {
 
   return (
     <div className="login-container">
+      <div className="image-section">
+        <img src={loginImage} alt="Smart Home Illustration" />
+      </div>
       <div className="login-box">
         <div className='icons'>
         <div className="LoginIcon"><AccountCircleIcon/></div>
